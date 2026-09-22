@@ -17,3 +17,8 @@ ENERGY_SCALE = 10
 API_HOST = "127.0.0.1"
 API_PORT = 8000
 
+GE = 1 # register baslangıç için
+LE = 6 # register bitiş
+
+DATABASE_NAME = "modbus.db"
+DATABASE_PASSWORD = "aSdFgHjKlŞi."

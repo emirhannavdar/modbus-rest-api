@@ -1,10 +1,12 @@
-from fastapi import FastAPI, HTTPException, APIRouter, Query, Path
-from modbus_service import read_modbus_data, read_modbus_id, read_modbus_voltage, read_modbus_current, read_modbus_power, read_modbus_frekans, read_modbus_enerji, read_modbus_temp, update_modbus_value
+from fastapi import FastAPI, HTTPException, APIRouter, Query, Path, Request
+from modbus_service import read_modbus_data, read_modbus_id, read_modbus_voltage, read_modbus_current, read_modbus_power, read_modbus_frekans, read_modbus_enerji, read_modbus_temp, update_modbus_value, deleteId
 from pydantic import BaseModel, ConfigDict, Field
+from config import GE, LE
+from database import add_device, get_devices, delete_device, get_device
 
 app = FastAPI(
-    title="Modbus Wattmetre REST API",
-    description="Modbus TCP üzerinden elektriksel değerleri okur.",
+    title="Modbus REST API",
+    description="",
     version="1.0.0"
 )
 
@@ -13,12 +15,23 @@ router = APIRouter(prefix="/api/v1/modbus")
 class ModbusRequest(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
-    start: int = Field(ge=1, le=6)
-    end: int = Field(ge=1, le=6)
+    start: int = Field(ge=GE, le=LE)
+    end: int = Field(ge=GE, le=LE)
 
 class ModbusUpdate(BaseModel):
-    value: int
+    model_config = ConfigDict()
 
+    id: int
+    voltage: float
+
+class ModbusDevice(BaseModel):
+    model_config = ConfigDict()
+    name: str
+    host: str
+
+class ModbusDevices(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    id: int
 
 @router.post("/")
 def getModbus(request: ModbusRequest):
@@ -98,7 +111,7 @@ def getByPower():
         )
 
 @router.get("/frequency")
-def getByPower():
+def getByFrekans():
     try:
         data = read_modbus_frekans()
 
@@ -114,7 +127,7 @@ def getByPower():
         )
 
 @router.get("/energy")
-def getByPower():
+def getByEnergy():
     try:
         data = read_modbus_enerji()
 
@@ -130,7 +143,7 @@ def getByPower():
         )
 
 @router.get("/temp")
-def getByPower():
+def getByTemp():
     try:
         data = read_modbus_temp()
 
@@ -145,13 +158,46 @@ def getByPower():
             detail=str(e)
         )
 
+@router.get("/devices")
+def devices():
+    try:
+        devices = get_devices()
+        return {
+            "success": True,
+            "devices": devices
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )
+
+@router.get("/devices/{id}")
+def getDevices(request: ModbusDevices):
+    try:
+        getDevice = get_device(device_id=request.id)
+        return {
+            "success": True,
+            "data": getDevice
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )
+
+
 @router.get("/{id}")
 def getBeyIdModbus(id: int):
 
-    if id < 1 or id > 6:
+    if id < GE or id > LE:
         raise HTTPException(
             status_code=400,
-            detail="id 1 ile 6 arasında olmalıdır."
+            detail=f"id {GE} ile {LE} arasında olmalıdır."
         )
 
     try:
@@ -168,22 +214,69 @@ def getBeyIdModbus(id: int):
             detail=str(e)
         )
 
-@router.put("/{id}/voltage")
-def update_modbus(id: int, voltage: float,request: ModbusUpdate):
+@router.delete("/Devices/Delete/{id}")
+def DeleteDevices(request: ModbusDevices):
+    try:
+        deletedevice = delete_device(device_id = request.id)
+        return {
+            "success": True,
+            "id": request.id
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )        
 
-    if id < 1 or id > 6:
+@router.post("/addDevices")
+def AddDevice(request: ModbusDevice):
+    try:
+        device_id = add_device(name=request.name, host=request.host)
+        return {
+            "success": True,
+            "data": device_id
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )
+
+@router.delete("/{id}")
+def delete_id(request: ModbusDevices):
+    try:
+        deleteId(request.id)
+        return {
+            "succes": True,
+            "id": request.id,
+            "detail": "silindi"
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )
+
+
+@router.put("/{id}/voltage")
+def update_modbus(request: ModbusUpdate):
+
+    if request.id < GE or request.id > LE:
         raise HTTPException(
             status_code=400,
-            detail="id 1 ile 6 arasında olmalıdır."
+            detail=f"id {GE} ile {LE} arasinda olmalidir."
         )
 
     try:
-        update_modbus_value(id, voltage)
+        update_modbus_value(request.id, request.voltage)
         return {
             "success": True,
-            "id": id,
-            "voltage": voltage,
-            "value": request.value
+            "id": request.id,
+            "voltage": request.voltage,
         }
 
     except Exception as e:

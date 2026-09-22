@@ -1,5 +1,7 @@
 from pymodbus.client import ModbusTcpClient
 
+from config import GE, LE
+
 from config import (
     MODBUS_HOST,
     MODBUS_PORT,
@@ -8,21 +10,31 @@ from config import (
 
 from database import save_measurement, get_connection
 
-def read_modbus_data(start=None, end=None):
 
+def get_modbus_client():
     client = ModbusTcpClient(
         MODBUS_HOST,
         port=MODBUS_PORT
     )
+
+    if not client.connect():
+        client.close()
+        raise Exception(
+            "Modbus cihazına bağlanılamadı."
+        )
+
+    return client
+
+
+def read_modbus_data(start=None, end=None):
+
+    client = get_modbus_client()
+
     try:
-        if not client.connect():
-            raise Exception(
-                "Modbus cihazına bağlanılamadı."
-            )
 
         if start is None:
-            address = 1
-            count = 5
+            address = GE
+            count = LE
 
         elif end is None:
             address = start
@@ -49,41 +61,47 @@ def read_modbus_data(start=None, end=None):
     finally:
         client.close()
 
+
 def read_modbus_id(
     id: int
-    ):
-    client = ModbusTcpClient(
-        MODBUS_HOST,
-        port=MODBUS_PORT
-    )
+):
+
+    client = get_modbus_client()
+
     try:
-        if not client.connect():
-            raise Exception(
-                "Modbus cihazına bağlanılamadı."
-            )
+
         result = client.read_holding_registers(
             address=id,
             count=1
         )
+
         if result.isError():
-            raise Exception("register okuma hatası")
-            
-        save_measurement(id, result.registers[0])
-        return result.registers[0]
+            raise Exception(
+                "register okuma hatası"
+            )
+
+        value = result.registers[0]
+
+        # Şimdilik mevcut/default cihazı kullanıyoruz.
+        # Çoklu cihaz endpointini yazarken burayı device_id
+        # üzerinden değiştireceğiz.
+        save_measurement(
+            MODBUS_DEVICE_ID,
+            id,
+            value
+        )
+
+        return value
 
     finally:
         client.close()
 
+
 def read_modbus_voltage():
-    client = ModbusTcpClient(
-        MODBUS_HOST,
-        port=MODBUS_PORT
-    )
+
+    client = get_modbus_client()
+
     try:
-        if not client.connect():
-            raise Exception(
-                "modbus'a bağlanmadı"
-            )
 
         result = client.read_holding_registers(
             address=1,
@@ -100,17 +118,13 @@ def read_modbus_voltage():
     finally:
         client.close()
 
+
 def read_modbus_current():
-    client = ModbusTcpClient(
-        MODBUS_HOST,
-        port=MODBUS_PORT
-    )
+
+    client = get_modbus_client()
+
     try:
-        if not client.connect():
-            raise Exception(
-                "modbus'a bağlanılamadı"
-            )
-        
+
         result = client.read_holding_registers(
             address=1,
             count=2
@@ -120,23 +134,19 @@ def read_modbus_current():
             raise Exception(
                 "current hatası"
             )
+
         return result.registers[1]
 
     finally:
         client.close()
 
+
 def read_modbus_power():
-    client = ModbusTcpClient(
-        MODBUS_HOST,
-        port=MODBUS_PORT
-    )
+
+    client = get_modbus_client()
 
     try:
-        if not client.connect():
-            raise Exception(
-                "modbus'a bağlanılamadı"
-            )
-        
+
         result = client.read_holding_registers(
             address=1,
             count=3
@@ -146,22 +156,19 @@ def read_modbus_power():
             raise Exception(
                 "power hatası"
             )
+
         return result.registers[2]
+
     finally:
         client.close()
 
+
 def read_modbus_frekans():
-    client = ModbusTcpClient(
-        MODBUS_HOST,
-        port=MODBUS_PORT
-    )
+
+    client = get_modbus_client()
 
     try:
-        if not client.connect():
-            raise Exception(
-                "modbus'a bağlanılamadı"
-            )
-        
+
         result = client.read_holding_registers(
             address=1,
             count=4
@@ -169,24 +176,21 @@ def read_modbus_frekans():
 
         if result.isError():
             raise Exception(
-                "power hatası"
+                "FREKANS HATASI"
             )
+
         return result.registers[3]
+
     finally:
         client.close()
 
+
 def read_modbus_enerji():
-    client = ModbusTcpClient(
-        MODBUS_HOST,
-        port=MODBUS_PORT
-    )
+
+    client = get_modbus_client()
 
     try:
-        if not client.connect():
-            raise Exception(
-                "modbus'a bağlanılamadı"
-            )
-        
+
         result = client.read_holding_registers(
             address=1,
             count=5
@@ -194,24 +198,21 @@ def read_modbus_enerji():
 
         if result.isError():
             raise Exception(
-                "power hatası"
+                "ENERGY HATASI"
             )
+
         return result.registers[4]
+
     finally:
         client.close()
 
+
 def read_modbus_temp():
-    client = ModbusTcpClient(
-        MODBUS_HOST,
-        port=MODBUS_PORT
-    )
+
+    client = get_modbus_client()
 
     try:
-        if not client.connect():
-            raise Exception(
-                "modbus'a bağlanılamadı"
-            )
-        
+
         result = client.read_holding_registers(
             address=1,
             count=6
@@ -219,16 +220,27 @@ def read_modbus_temp():
 
         if result.isError():
             raise Exception(
-                "power hatası"
+                "TEMP hatası"
             )
-        return result.registers[5]
+
+        fah = result.registers[5]
+
+        temp = (fah - 32) * 5 / 9
+
+        return "{:.2f}".format(temp)
+
     finally:
         client.close()
 
+
 def update_modbus_value(id, value):
+
     connection = get_connection()
+
     try:
+
         cursor = connection.cursor()
+
         cursor.execute(
             """
             UPDATE measurements
@@ -237,12 +249,46 @@ def update_modbus_value(id, value):
             """,
             (value, id)
         )
+
         if cursor.rowcount == 0:
             raise Exception(
                 "Belirtilen id ile kayıt bulunamadı."
             )
+
         connection.commit()
 
         return True
+
     finally:
         connection.close()
+
+
+def deleteId(id):
+
+    connection = get_connection()
+
+    try:
+
+        cursor = connection.cursor()
+
+        cursor.execute(
+            """
+            DELETE FROM measurements
+            WHERE id = ?
+            """,
+            (id,)
+        )
+
+        if cursor.rowcount == 0:
+            raise Exception(
+                "Belirtilen id ile kayit bulunamadi"
+            )
+
+        connection.commit()
+
+        return True
+
+    finally:
+        connection.close()
+
+
