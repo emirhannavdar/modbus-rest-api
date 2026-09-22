@@ -1,196 +1,154 @@
-import sqlcipher3
-from config import DATABASE_NAME, DATABASE_PASSWORD
+import psycopg
+
+from config import (
+    DB_HOST,
+    DB_PORT,
+    DB_NAME,
+    DB_USER,
+    DB_PASSWORD
+)
+
 
 def get_connection():
-    connection = sqlcipher3.connect(DATABASE_NAME)
-
-    connection.execute(
-        f"PRAGMA key = '{DATABASE_PASSWORD}'"
+    return psycopg.connect(
+        host=DB_HOST,
+        port=DB_PORT,
+        dbname=DB_NAME,
+        user=DB_USER,
+        password=DB_PASSWORD
     )
-
-    return connection
-
-
-def create_database():
-    connection = get_connection()
-    cursor = connection.cursor()
-
-    # Cihazlar
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS devices (
-
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-
-            name TEXT NOT NULL,
-
-            host TEXT NOT NULL,
-
-            port INTEGER NOT NULL DEFAULT 502,
-
-            unit_id INTEGER NOT NULL DEFAULT 1
-
-        )
-    """)
-
-    # Register bilgileri
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS registers (
-
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-
-            device_id INTEGER NOT NULL,
-
-            register_address INTEGER NOT NULL,
-
-            name TEXT NOT NULL,
-
-            unit TEXT,
-
-            scale INTEGER NOT NULL DEFAULT 1,
-
-            FOREIGN KEY (device_id)
-                REFERENCES devices(id),
-
-            UNIQUE(device_id, register_address)
-
-        )
-    """)
-
-    # Ölçümler
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS measurements (
-
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-
-            device_id INTEGER NOT NULL,
-
-            register_address INTEGER NOT NULL,
-
-            value INTEGER NOT NULL,
-
-            timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
-
-            FOREIGN KEY (device_id)
-                REFERENCES devices(id)
-
-        )
-    """)
-
-    connection.commit()
-    connection.close()
 
 
 def add_device(name, host, port=502, unit_id=1):
-
     connection = get_connection()
 
     try:
         cursor = connection.cursor()
 
-        cursor.execute("""
-            INSERT INTO devices
+        cursor.execute(
+            """
+            INSERT INTO devices (name, host, port, unit_id)
+            VALUES (%s, %s, %s, %s)
+            RETURNING id
+            """,
             (name, host, port, unit_id)
-            VALUES (?, ?, ?, ?)
-        """, (
-            name,
-            host,
-            port,
-            unit_id
-        ))
+        )
+
+        device_id = cursor.fetchone()[0]
 
         connection.commit()
 
-        return cursor.lastrowid
-
-    finally:
-        connection.close()
-
-
-def get_device(device_id):
-
-    connection = get_connection()
-
-    try:
-        cursor = connection.cursor()
-
-        cursor.execute("""
-            SELECT id, name, host, port, unit_id
-            FROM devices
-            WHERE id = ?
-        """, (device_id,))
-
-        return cursor.fetchone()
+        return device_id
 
     finally:
         connection.close()
 
 
 def get_devices():
-
     connection = get_connection()
 
     try:
         cursor = connection.cursor()
 
-        cursor.execute("""
+        cursor.execute(
+            """
             SELECT id, name, host, port, unit_id
             FROM devices
             ORDER BY id
-        """)
+            """
+        )
 
-        return cursor.fetchall()
+        rows = cursor.fetchall()
+
+        devices = []
+
+        for row in rows:
+            devices.append({
+                "id": row[0],
+                "name": row[1],
+                "host": row[2],
+                "port": row[3],
+                "unit_id": row[4]
+            })
+
+        return devices
+
+    finally:
+        connection.close()
+
+
+def get_device(device_id):
+    connection = get_connection()
+
+    try:
+        cursor = connection.cursor()
+
+        cursor.execute(
+            """
+            SELECT id, name, host, port, unit_id
+            FROM devices
+            WHERE id = %s
+            """,
+            (device_id,)
+        )
+
+        row = cursor.fetchone()
+
+        if row is None:
+            return None
+
+        return {
+            "id": row[0],
+            "name": row[1],
+            "host": row[2],
+            "port": row[3],
+            "unit_id": row[4]
+        }
 
     finally:
         connection.close()
 
 
 def delete_device(device_id):
-
     connection = get_connection()
 
     try:
         cursor = connection.cursor()
 
-        cursor.execute("""
+        cursor.execute(
+            """
             DELETE FROM devices
-            WHERE id = ?
-        """, (device_id,))
+            WHERE id = %s
+            """,
+            (device_id,)
+        )
 
-        if cursor.rowcount == 0:
-            raise Exception(
-                "Belirtilen cihaz bulunamadı."
-            )
+        deleted = cursor.rowcount
 
         connection.commit()
 
-        return True
+        return deleted > 0
 
     finally:
         connection.close()
 
 
 def save_measurement(device_id, register_address, value):
-
     connection = get_connection()
 
     try:
         cursor = connection.cursor()
 
-        cursor.execute("""
+        cursor.execute(
+            """
             INSERT INTO measurements
             (device_id, register_address, value)
-            VALUES (?, ?, ?)
-        """, (
-            device_id,
-            register_address,
-            value
-        ))
+            VALUES (%s, %s, %s)
+            """,
+            (device_id, register_address, value)
+        )
 
         connection.commit()
 
     finally:
         connection.close()
-
-
-if __name__ == "__main__":
-    create_database()

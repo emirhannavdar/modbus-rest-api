@@ -1,24 +1,46 @@
 MODBUS_HOST = "127.0.0.1"
+
 MODBUS_PORT = 5020
+
 MODBUS_DEVICE_ID = 1
 
+
 VOLTAGE_REGISTER = 1
+
 CURRENT_REGISTER = 2
+
 POWER_REGISTER = 3
+
 FREQUENCY_REGISTER = 4
+
 ENERGY_REGISTER = 5
+
 REGISTER_COUNT = 5
 
+
 VOLTAGE_SCALE = 10
+
 CURRENT_SCALE = 100
+
 POWER_SCALE = 1
+
 FREQUENCY_SCALE = 100
+
 ENERGY_SCALE = 10
+
+
 API_HOST = "127.0.0.1"
+
 API_PORT = 8000
 
-GE = 1 # register baslangıç için
-LE = 6 # register bitiş
 
-DATABASE_NAME = "modbus.db"
-DATABASE_PASSWORD = "aSdFgHjKlŞi."
+GE = 1  # register başlangıç
+
+LE = 6  # register bitiş
+
+
+DB_HOST = "127.0.0.1"
+DB_PORT = 5432
+DB_NAME = "modbus_db"
+DB_USER = "postgres"
+DB_PASSWORD = "deneme123"

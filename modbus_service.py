@@ -1,294 +1,284 @@
-from pymodbus.client import ModbusTcpClient
-
-from config import GE, LE
-
-from config import (
-    MODBUS_HOST,
-    MODBUS_PORT,
-    MODBUS_DEVICE_ID
-)
-
-from database import save_measurement, get_connection
-
-
-def get_modbus_client():
-    client = ModbusTcpClient(
-        MODBUS_HOST,
-        port=MODBUS_PORT
-    )
-
-    if not client.connect():
-        client.close()
-        raise Exception(
-            "Modbus cihazına bağlanılamadı."
-        )
-
-    return client
+from config import GE, LE, MODBUS_DEVICE_ID
+from database import get_connection
 
 
 def read_modbus_data(start=None, end=None):
-
-    client = get_modbus_client()
-
+    connection = get_connection()
     try:
-
+        cursor = connection.cursor()
         if start is None:
-            address = GE
-            count = LE
-
+            start = GE
+            end = LE
         elif end is None:
-            address = start
-            count = 1
-
-        else:
-            address = start
-            count = end - start + 1
-
-        result = client.read_holding_registers(
-            address=address,
-            count=count,
-        )
-
-        if result.isError():
+            end = start
+        if end < start:
             raise Exception(
-                "Modbus register okuma hatası."
+                "Bitiş registerı başlangıç registerından küçük olamaz."
             )
-
-        registers = result.registers
-
-        return registers
-
+        cursor.execute(
+            """
+            SELECT DISTINCT ON (register_address)
+                   register_address,
+                   value
+            FROM measurements
+            WHERE device_id = %s
+              AND register_address BETWEEN %s AND %s
+            ORDER BY register_address, timestamp DESC, id DESC
+            """,
+            (
+                MODBUS_DEVICE_ID,
+                start,
+                end
+            )
+        )
+        rows = cursor.fetchall()
+        if not rows:
+            raise Exception(
+                "Belirtilen register için veri bulunamadı."
+            )
+        values = {
+            row[0]: row[1]
+            for row in rows
+        }
+        return [
+            values[address]
+            for address in range(start, end + 1)
+            if address in values
+        ]
     finally:
-        client.close()
+        connection.close()
 
 
-def read_modbus_id(
-    id: int
-):
-
-    client = get_modbus_client()
-
+def read_modbus_id(id: int):
+    connection = get_connection()
     try:
-
-        result = client.read_holding_registers(
-            address=id,
-            count=1
-        )
-
-        if result.isError():
-            raise Exception(
-                "register okuma hatası"
+        cursor = connection.cursor()
+        cursor.execute(
+            """
+            SELECT value
+            FROM measurements
+            WHERE device_id = %s
+              AND register_address = %s
+            ORDER BY timestamp DESC
+            LIMIT 1
+            """,
+            (
+                MODBUS_DEVICE_ID,
+                id
             )
-
-        value = result.registers[0]
-
-        # Şimdilik mevcut/default cihazı kullanıyoruz.
-        # Çoklu cihaz endpointini yazarken burayı device_id
-        # üzerinden değiştireceğiz.
-        save_measurement(
-            MODBUS_DEVICE_ID,
-            id,
-            value
         )
-
-        return value
-
+        row = cursor.fetchone()
+        if row is None:
+            raise Exception(
+                "Belirtilen register bulunamadı."
+            )
+        return row[0]
     finally:
-        client.close()
+        connection.close()
 
 
 def read_modbus_voltage():
-
-    client = get_modbus_client()
-
+    connection = get_connection()
     try:
-
-        result = client.read_holding_registers(
-            address=1,
-            count=1
+        cursor = connection.cursor()
+        cursor.execute(
+            """
+            SELECT value
+            FROM measurements
+            WHERE device_id = %s
+              AND register_address = 1
+            ORDER BY timestamp DESC
+            LIMIT 1
+            """,
+            (MODBUS_DEVICE_ID,)
         )
 
-        if result.isError():
+        row = cursor.fetchone()
+        if row is None:
             raise Exception(
-                "voltage hatası"
+                "Voltage verisi bulunamadı."
             )
 
-        return result.registers[0]
-
+        return row[0]
     finally:
-        client.close()
+        connection.close()
 
 
 def read_modbus_current():
-
-    client = get_modbus_client()
-
+    connection = get_connection()
     try:
-
-        result = client.read_holding_registers(
-            address=1,
-            count=2
+        cursor = connection.cursor()
+        cursor.execute(
+            """
+            SELECT value
+            FROM measurements
+            WHERE device_id = %s
+              AND register_address = 2
+            ORDER BY timestamp DESC
+            LIMIT 1
+            """,
+            (MODBUS_DEVICE_ID,)
         )
 
-        if result.isError():
+        row = cursor.fetchone()
+        if row is None:
             raise Exception(
-                "current hatası"
+                "Current verisi bulunamadı."
             )
-
-        return result.registers[1]
-
+        return row[0]
     finally:
-        client.close()
+        connection.close()
 
 
 def read_modbus_power():
-
-    client = get_modbus_client()
-
+    connection = get_connection()
     try:
-
-        result = client.read_holding_registers(
-            address=1,
-            count=3
+        cursor = connection.cursor()
+        cursor.execute(
+            """
+            SELECT value
+            FROM measurements
+            WHERE device_id = %s
+              AND register_address = 3
+            ORDER BY timestamp DESC
+            LIMIT 1
+            """,
+            (MODBUS_DEVICE_ID,)
         )
 
-        if result.isError():
+        row = cursor.fetchone()
+        if row is None:
             raise Exception(
-                "power hatası"
+                "Power verisi bulunamadı."
             )
-
-        return result.registers[2]
-
+        return row[0]
     finally:
-        client.close()
+        connection.close()
 
 
 def read_modbus_frekans():
-
-    client = get_modbus_client()
-
+    connection = get_connection()
     try:
-
-        result = client.read_holding_registers(
-            address=1,
-            count=4
+        cursor = connection.cursor()
+        cursor.execute(
+            """
+            SELECT value
+            FROM measurements
+            WHERE device_id = %s
+              AND register_address = 4
+            ORDER BY timestamp DESC
+            LIMIT 1
+            """,
+            (MODBUS_DEVICE_ID,)
         )
 
-        if result.isError():
+        row = cursor.fetchone()
+        if row is None:
+
             raise Exception(
-                "FREKANS HATASI"
+                "Frequency verisi bulunamadı."
             )
-
-        return result.registers[3]
-
+        return row[0]
     finally:
-        client.close()
+        connection.close()
 
 
 def read_modbus_enerji():
-
-    client = get_modbus_client()
-
+    connection = get_connection()
     try:
-
-        result = client.read_holding_registers(
-            address=1,
-            count=5
+        cursor = connection.cursor()
+        cursor.execute(
+            """
+            SELECT value
+            FROM measurements
+            WHERE device_id = %s
+              AND register_address = 5
+            ORDER BY timestamp DESC
+            LIMIT 1
+            """,
+            (MODBUS_DEVICE_ID,)
         )
 
-        if result.isError():
+        row = cursor.fetchone()
+        if row is None:
             raise Exception(
-                "ENERGY HATASI"
+                "Energy verisi bulunamadı."
             )
-
-        return result.registers[4]
-
+        return row[0]
     finally:
-        client.close()
+        connection.close()
 
 
 def read_modbus_temp():
-
-    client = get_modbus_client()
-
+    connection = get_connection()
     try:
-
-        result = client.read_holding_registers(
-            address=1,
-            count=6
+        cursor = connection.cursor()
+        cursor.execute(
+            """
+            SELECT value
+            FROM measurements
+            WHERE device_id = %s
+              AND register_address = 9
+            ORDER BY timestamp DESC
+            LIMIT 1
+            """,
+            (MODBUS_DEVICE_ID,)
         )
 
-        if result.isError():
+        row = cursor.fetchone()
+        if row is None:
             raise Exception(
-                "TEMP hatası"
+                "Temperature verisi bulunamadı."
             )
-
-        fah = result.registers[5]
-
-        temp = (fah - 32) * 5 / 9
-
-        return "{:.2f}".format(temp)
-
+        temp = row[0] / 10
+        return f"{temp:.2f}"
     finally:
-        client.close()
+        connection.close()
 
 
 def update_modbus_value(id, value):
-
     connection = get_connection()
-
     try:
-
         cursor = connection.cursor()
-
         cursor.execute(
             """
             UPDATE measurements
-            SET value = ?
-            WHERE id = ?
+            SET value = %s
+            WHERE id = %s
             """,
-            (value, id)
+            (
+                value,
+                id
+            )
         )
 
         if cursor.rowcount == 0:
             raise Exception(
                 "Belirtilen id ile kayıt bulunamadı."
             )
-
         connection.commit()
-
         return True
-
     finally:
         connection.close()
 
 
 def deleteId(id):
-
     connection = get_connection()
-
     try:
-
         cursor = connection.cursor()
-
         cursor.execute(
             """
             DELETE FROM measurements
-            WHERE id = ?
+            WHERE id = %s
             """,
             (id,)
         )
 
         if cursor.rowcount == 0:
             raise Exception(
-                "Belirtilen id ile kayit bulunamadi"
+                "Belirtilen id ile kayıt bulunamadı."
             )
-
         connection.commit()
-
         return True
-
     finally:
         connection.close()
-
-
