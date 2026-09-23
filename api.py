@@ -1,8 +1,12 @@
-from fastapi import FastAPI, HTTPException, APIRouter, Query, Path, Request
-from modbus_service import read_modbus_data, read_modbus_id, read_modbus_voltage, read_modbus_current, read_modbus_power, read_modbus_frekans, read_modbus_enerji, read_modbus_temp, update_modbus_value, deleteId
+from fastapi import FastAPI, HTTPException, APIRouter, Query, Path, Request, Depends, status
+from modbus_service import read_modbus_data, read_modbus_id, read_modbus_voltage, read_modbus_current, read_modbus_power, read_modbus_frekans, read_modbus_enerji, read_modbus_temp, update_modbus_value, deleteId, AddUser
 from pydantic import BaseModel, ConfigDict, Field
-from config import GE, LE
+from config import GE, LE, ACCESS_TOKEN_EXPIRE_MINUTES
 from database import add_device, get_devices, delete_device, get_device
+from auth import get_current_active_user, Token, authenticate_user, create_access_token, fake_users_db
+from typing import Annotated
+from datetime import timedelta
+from fastapi.security import OAuth2PasswordRequestForm
 
 app = FastAPI(
     title="Modbus REST API",
@@ -10,7 +14,10 @@ app = FastAPI(
     version="1.0.0"
 )
 
-router = APIRouter(prefix="/api/v1/modbus")
+router = APIRouter(
+    prefix="/api/v1/modbus",
+    dependencies=[Depends(get_current_active_user)]
+)
 
 class ModbusRequest(BaseModel):
     model_config = ConfigDict(extra="forbid")
@@ -32,6 +39,66 @@ class ModbusDevice(BaseModel):
 class ModbusDevices(BaseModel):
     model_config = ConfigDict(extra="forbid")
     id: int
+
+class ModbusAddUser(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    username: str
+    full_name: str
+    email: str
+    password: str
+
+@app.post("/token")
+async def login_for_accestoken(
+    form_data: Annotated[
+        OAuth2PasswordRequestForm,
+        Depends()
+    ]
+) -> Token:
+    user = authenticate_user(
+        fake_users_db,
+        form_data.username,
+        form_data.password
+    )
+
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="hatalı kullanıcı adı şifre",
+            headers={
+                "WWW-Authenticate": "Bearer"
+            },
+        )
+    
+    acces_token_expires = timedelta(
+        minutes = ACCESS_TOKEN_EXPIRE_MINUTES
+    )
+
+    access_token = create_access_token(
+        data={"sub": user.username},
+        expires_delta=acces_token_expires
+    )
+
+    return Token(
+        access_token=access_token,
+        token_type="bearer"
+    )
+
+@router.post("/add/user")
+def add_User(request= ModbusAddUser):
+    try:
+        add_user = AddUser(request.username, request.full_name, request.email, request.password)
+        return {
+            "success": True,
+            "data": add_user
+        }
+    except HTTPException:
+        raise
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail="kullanici olusturulamadi"
+        )
 
 @router.post("/")
 def getModbus(request: ModbusRequest):
@@ -260,7 +327,6 @@ def delete_id(request: ModbusDevices):
             status_code=500,
             detail=str(e)
         )
-
 
 @router.put("/{id}/voltage")
 def update_modbus(request: ModbusUpdate):

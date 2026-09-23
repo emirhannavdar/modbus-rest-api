@@ -235,6 +235,8 @@ def read_modbus_temp():
     finally:
         connection.close()
 
+def AddUser():
+    asd
 
 def update_modbus_value(id, value):
     connection = get_connection()
