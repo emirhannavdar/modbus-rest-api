@@ -35,7 +35,7 @@ class RestApiModbus(BaseModel, Generic[T]):
         return cls(success=False, data=None, errorCode=code, errorMessage=message)
 
 @modbus.get('', response_model=RestApiModbus)
-def Modbus_endpoint(request: Request):
+def get_modbus(request: Request):
     if request.query_params:
         error_res = RestApiModbus.error(f"Sayfa Bulunamadı.", 404)
         raise HTTPException(status_code=404, detail=jsonable_encoder(error_res))
@@ -58,7 +58,7 @@ def Modbus_endpoint(request: Request):
         return JSONResponse(status_code=500, content=jsonable_encoder(error_res))
 
 @modbus.get('/{id}', response_model=RestApiModbus)
-def Modbus(id: int, request: Request):
+def get_modbus(id: int, request: Request):
     if request.query_params:
         error_res = RestApiModbus.error(f"Sayfa Bulunamadı.", 404)
         raise HTTPException(status_code=404, detail=jsonable_encoder(error_res))

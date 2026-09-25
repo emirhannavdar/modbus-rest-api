@@ -3,7 +3,7 @@ from calendar import error
 
 from fastapi import APIRouter, HTTPException, Query, Request
 from fastapi.encoders import jsonable_encoder
-from modbus_service import get_devices, getIdDevice, add_device, up_device, del_device, patch_dev
+from modbus_service import getDevices, getIdDevice, add_device, up_device, del_device, patch_dev
 from typing import Generic, TypeVar, Optional
 from pydantic import BaseModel, ConfigDict, Field
 from psycopg.rows import dict_row
@@ -40,10 +40,10 @@ class ModBusDevicesPost(BaseModel):
 
 class ModBusDevicesPut(BaseModel):
     model_config = ConfigDict(extra="forbid")
-    name: Optional[str] = None
-    host: Optional[str] = None
-    port: Optional[int] = None
-    unit_id: Optional[int] = None
+    name: str
+    host: str
+    port: int
+    unit_id: int
 
 class ModBusDevicesDel(BaseModel):
     model_config = ConfigDict(extra="forbid")
@@ -58,7 +58,7 @@ class ModBusDevicesPatch(BaseModel):
     unit_id: Optional[int] = None
 
 @devices.get('')
-def get_devices_endpoint(request: Request):
+def get_devices(request: Request):
     if request.query_params:
         error_res= RestApiDevices.error(f"geçersiz sayfa", code=404)
         raise HTTPException(
@@ -66,7 +66,7 @@ def get_devices_endpoint(request: Request):
             detail=jsonable_encoder(error_res)
         )
     try:
-        data = get_devices()
+        data = getDevices()
         return RestApiDevices.ok(data, f"BASARILI")
 
     except HTTPException:
@@ -81,7 +81,7 @@ def get_devices_endpoint(request: Request):
 
 
 @devices.get('/{id}')
-def get_device_endpoint(id: int, request: Request):
+def get_device(id: int, request: Request):
     if  request.query_params:
         error_res = RestApiDevices.error(f"geçersiz sayfa", code=404)
         raise HTTPException(
@@ -135,7 +135,7 @@ def create_device(raw: ModBusDevicesPost, request: Request):
         )
 
 @devices.put('/{id}')
-def update_device_endpoint(id: int, raw: ModBusDevicesPut, request: Request):
+def update_device(id: int, raw: ModBusDevicesPut, request: Request):
     try:
         device_up = up_device(
             id = id,
@@ -156,13 +156,15 @@ def update_device_endpoint(id: int, raw: ModBusDevicesPut, request: Request):
         )
 
 @devices.delete('/{id}')
-def del_devicess_endpoint(id: int, raw: ModBusDevicesDel, request: Request):
+def del_devices(id: int, request: Request):
     try:
-        device_del = del_device(
-            id = id,
-            name = raw.name,
-            port = raw.port
-        )
+        device_del = del_device(id = id)
+        print(device_del)
+
+        if device_del == []:
+            error_res = RestApiDevices.error("cihaz bulunamadı", 404)
+            raise HTTPException(status_code=404, detail=jsonable_encoder(error_res))
+
         return RestApiDevices.ok(device_del, "BASARILI")
     except HTTPException:
         raise
@@ -174,7 +176,7 @@ def del_devicess_endpoint(id: int, raw: ModBusDevicesDel, request: Request):
         )
 
 @devices.patch('/{id}')
-def patch_devices_endpoint(id: int, raw: ModBusDevicesPatch, request: Request):
+def patch_devices(id: int, raw: ModBusDevicesPatch, request: Request):
     try:
         data = patch_dev(id=id, name=raw.name, host=raw.host, port=raw.port, unit_id=raw.unit_id)
         if isinstance(data, str):

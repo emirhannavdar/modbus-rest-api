@@ -6,7 +6,7 @@ from psycopg2.extras import RealDictCursor
 from psycopg.rows import dict_row
 import json
 
-def get_devices():
+def getDevices():
     connection = get_connection()
     try:
         cursor = connection.cursor()
@@ -152,29 +152,26 @@ def up_device(
             UPDATE devices
             SET name = %s, host = %s, port = %s, unit_id = %s
             WHERE id = %s
+            RETURNING *
             """, (name, host, port, unit_id, id)
         )
 
-        up_dev = cursor.rowcount
+        up_dev = cursor.fetchall()
         connection.commit()
         return up_dev
     finally:
         connection.close()
 
-def del_device(
-    id,
-    name,
-    port
-):
+def del_device(id):
     connection = get_connection()
     try:
         cursor = connection.cursor(row_factory=dict_row)
         cursor.execute(
             """
-            DELETE FROM devices WHERE id = %s or name = %s or port = %s
-            """, (id, name, port)
+            DELETE FROM devices WHERE id = %s RETURNING *
+            """, (id,)
         )
-        del_dev = cursor.rowcount
+        del_dev = cursor.fetchall()
         connection.commit()
         return del_dev
     finally:
