@@ -8,17 +8,8 @@ from jwt.exceptions import InvalidTokenError
 from pwdlib import PasswordHash
 from pydantic import BaseModel
 from config import SECRET_KEY, ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES
+from database import get_user 
 
-
-fake_users_db = {
-    "emirhan": {
-        "username": "emirhan",
-        "full_name": "emirhan navdar",
-        "email": "emirhannavdar@example.com",
-        "hashed_password": "$argon2id$v=19$m=65536,t=3,p=4$3Bx1SH178dc6wxaBUnGsGg$f82t3F7UAY67sfrOcUxqGVvTZ/JQ/PKN4Axkc9eh6og",
-        "disabled": False,
-    },
-}
 
 class Token(BaseModel):
     access_token: str
@@ -54,18 +45,12 @@ def verify_password(plain_password, hashed_password):
 def get_password_hash(password):
     return password_hash.hash(password)
 
-
-def get_user(db, username: str):
-    if username in db:
-        user_dict = db[username]
-        return UserInDB(**user_dict)
-
-
-def authenticate_user(fake_db, username: str, password: str):
-    user = get_user(fake_db, username)
+def authenticate_user(username: str, password: str):
+    user = get_user(username)
     if not user:
         verify_password(password, DUMMY_HASH)
         return False
+    user = UserInDB(**user)
     if not verify_password(password, user.hashed_password):
         return False
     return user
@@ -96,10 +81,10 @@ async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
         token_data = TokenData(username=username)
     except InvalidTokenError:
         raise credentials_exception
-    user = get_user(fake_users_db, username=token_data.username)
+    user = get_user(token_data.username)
     if user is None:
         raise credentials_exception
-    return user
+    return UserInDB(**user)
 
 
 async def get_current_active_user(

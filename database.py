@@ -1,4 +1,5 @@
 import psycopg
+from pwdlib import PasswordHash
 from config import (
     DB_HOST,
     DB_PORT,
@@ -16,9 +17,6 @@ def get_connection():
         password=DB_PASSWORD
     )
 
-# ============================================================
-# USER
-# ============================================================
 
 def create_users_table():
     connection = get_connection()
@@ -43,17 +41,24 @@ def create_users_table():
     finally:
         connection.close()
 
+
+password_hash = PasswordHash.recommended()
 def add_user(
     username,
     full_name,
     email,
-    hashed_password,
+    password,
     disabled=False
 ):
+    print("1")
+    hashed_password = password_hash.hash(password)
+    print("2")
     connection = get_connection()
+    print("3")
     try:
+        print("4")
         cursor = connection.cursor()
-
+        print("5")
         cursor.execute(
             """
             INSERT INTO users
@@ -279,9 +284,6 @@ def delete_user(user_id):
     finally:
         connection.close()
 
-# ============================================================
-# DEVICE
-# ============================================================
 
 def add_device(name, host, port=502, unit_id=1):
     connection = get_connection()
@@ -306,36 +308,6 @@ def add_device(name, host, port=502, unit_id=1):
     finally:
         connection.close()
 
-def get_devices():
-    connection = get_connection()
-    try:
-        cursor = connection.cursor()
-
-        cursor.execute(
-            """
-            SELECT id, name, host, port, unit_id
-            FROM devices
-            ORDER BY id
-            """
-        )
-
-        rows = cursor.fetchall()
-
-        devices = []
-
-        for row in rows:
-            devices.append({
-                "id": row[0],
-                "name": row[1],
-                "host": row[2],
-                "port": row[3],
-                "unit_id": row[4]
-            })
-
-        return devices
-
-    finally:
-        connection.close()
 
 def get_device(device_id):
     connection = get_connection()
@@ -389,9 +361,6 @@ def delete_device(device_id):
     finally:
         connection.close()
 
-# ============================================================
-# MEASUREMENTS
-# ============================================================
 
 def save_measurement(device_id, register_address, value):
     connection = get_connection()
