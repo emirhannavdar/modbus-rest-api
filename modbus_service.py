@@ -168,12 +168,12 @@ def del_device(id):
         cursor = connection.cursor(row_factory=dict_row)
         cursor.execute(
             """
-            DELETE FROM devices WHERE id = %s RETURNING *
+            DELETE FROM devices WHERE id = %s
             """, (id,)
         )
-        del_dev = cursor.fetchall()
+        del_dev = cursor.rowcount
         connection.commit()
-        return del_dev
+        #return del_dev
     finally:
         connection.close()
 

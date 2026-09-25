@@ -159,7 +159,6 @@ def update_device(id: int, raw: ModBusDevicesPut, request: Request):
 def del_devices(id: int, request: Request):
     try:
         device_del = del_device(id = id)
-        print(device_del)
 
         if device_del == []:
             error_res = RestApiDevices.error("cihaz bulunamadı", 404)
