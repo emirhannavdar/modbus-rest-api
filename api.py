@@ -6,7 +6,7 @@ from venv import logger
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-
+from datetime import datetime
 from devices import devices
 from modbus import modbus
 
@@ -28,12 +28,14 @@ logger = logging.getLogger("Modbus REST API")
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     start_time = time.time()
+    dateTime = time.time()
     response = await call_next(request)
     duration = (time.time() - start_time) * 1000
 
     process_time_str = f"{duration:.2f}ms"
+    process_time = datetime.fromtimestamp(dateTime).strftime('%Y-%m-%d %H:%M:%S')
 
-    log_message = f"{response.status_code} - {process_time}"
+    log_message = f"{response.status_code} - {process_time_str} - {process_time}"
 
     logger.info(log_message)
 

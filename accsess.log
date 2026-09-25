@@ -10,3 +10,711 @@
 25-Sep-26 10:25:42 - Modbus REST API - INFO - 200 - <built-in function process_time>
 25-Sep-26 10:26:02 - Modbus REST API - INFO - 404 - <built-in function process_time>
 25-Sep-26 10:26:02 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 10:33:12 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:33:12 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:33:39 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:33:39 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:34:33 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 10:34:33 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 10:34:33 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:34:33 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:34:36 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:34:36 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:34:39 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:34:39 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:34:44 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:34:44 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:34:52 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:34:52 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:34:57 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 10:34:57 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 10:35:02 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:35:02 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:35:42 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:35:42 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:35:52 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 10:35:52 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 10:35:52 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:35:52 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:36:02 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 10:36:02 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 10:36:02 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:36:02 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:36:57 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 10:36:57 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 10:36:57 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:36:57 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:37:20 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 10:37:20 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 10:37:25 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 10:37:25 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 10:37:35 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 10:37:35 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 10:37:38 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:37:38 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:37:39 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 10:37:39 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 10:37:54 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:37:54 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:37:55 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 10:37:55 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 10:38:10 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 10:38:10 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 10:38:11 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 10:38:11 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 10:39:48 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 10:39:48 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 10:39:48 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:39:48 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:39:53 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:39:53 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:39:58 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:39:58 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:40:01 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:40:01 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:40:10 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 10:40:10 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 10:40:10 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:40:10 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:40:26 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:40:26 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:40:29 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 10:40:29 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 10:40:29 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:40:29 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:42:26 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 10:42:26 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 10:42:26 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:42:26 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:45:42 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:45:42 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:45:45 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:45:45 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:46:08 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:46:08 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:47:44 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:47:44 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:47:47 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:47:47 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:50:14 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:50:14 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:50:23 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 10:50:23 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:04:31 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:04:31 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:04:31 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:04:31 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:04:31 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:04:31 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:05:14 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:05:14 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:05:19 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:05:19 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:05:33 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 11:05:33 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 11:05:33 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:05:33 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:11:21 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:11:21 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:11:21 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 11:11:21 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 11:11:21 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:11:21 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:11:22 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:11:22 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:11:35 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:11:35 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:11:38 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:11:38 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:12:04 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:12:04 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:12:13 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:12:13 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:12:26 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:12:26 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:13:01 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:13:01 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:13:26 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:13:26 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:13:44 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:13:44 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:14:00 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:14:00 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:14:02 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 11:14:02 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 11:14:02 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:14:02 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:16:28 - Modbus REST API - INFO - 500 - <built-in function process_time>
+25-Sep-26 11:16:28 - Modbus REST API - ERROR - 500 - <built-in function process_time>
+25-Sep-26 11:16:30 - Modbus REST API - INFO - 500 - <built-in function process_time>
+25-Sep-26 11:16:30 - Modbus REST API - ERROR - 500 - <built-in function process_time>
+25-Sep-26 11:17:36 - Modbus REST API - INFO - 500 - <built-in function process_time>
+25-Sep-26 11:17:36 - Modbus REST API - ERROR - 500 - <built-in function process_time>
+25-Sep-26 11:17:47 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 11:17:47 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 11:17:47 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:17:47 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:17:55 - Modbus REST API - INFO - 500 - <built-in function process_time>
+25-Sep-26 11:17:55 - Modbus REST API - ERROR - 500 - <built-in function process_time>
+25-Sep-26 11:18:26 - Modbus REST API - INFO - 422 - <built-in function process_time>
+25-Sep-26 11:18:26 - Modbus REST API - ERROR - 422 - <built-in function process_time>
+25-Sep-26 11:18:30 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 11:18:30 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 11:18:30 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:18:30 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:19:24 - Modbus REST API - INFO - 500 - <built-in function process_time>
+25-Sep-26 11:19:24 - Modbus REST API - ERROR - 500 - <built-in function process_time>
+25-Sep-26 11:23:37 - Modbus REST API - INFO - 500 - <built-in function process_time>
+25-Sep-26 11:23:37 - Modbus REST API - ERROR - 500 - <built-in function process_time>
+25-Sep-26 11:23:48 - Modbus REST API - INFO - 500 - <built-in function process_time>
+25-Sep-26 11:23:48 - Modbus REST API - ERROR - 500 - <built-in function process_time>
+25-Sep-26 11:24:53 - Modbus REST API - INFO - 500 - <built-in function process_time>
+25-Sep-26 11:24:53 - Modbus REST API - ERROR - 500 - <built-in function process_time>
+25-Sep-26 11:25:09 - Modbus REST API - INFO - 500 - <built-in function process_time>
+25-Sep-26 11:25:09 - Modbus REST API - ERROR - 500 - <built-in function process_time>
+25-Sep-26 11:25:12 - Modbus REST API - INFO - 500 - <built-in function process_time>
+25-Sep-26 11:25:12 - Modbus REST API - ERROR - 500 - <built-in function process_time>
+25-Sep-26 11:26:10 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:26:10 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:26:20 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:26:20 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:26:22 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 11:26:22 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 11:26:22 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:26:22 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:26:37 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:26:37 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:26:47 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:26:47 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:27:07 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:27:07 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:29:33 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:29:33 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:38:42 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 11:38:42 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 11:38:42 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:38:42 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:38:48 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:38:48 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:38:48 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:38:48 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:41:09 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 11:41:09 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 11:41:54 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 11:41:54 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 11:42:29 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 11:42:29 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 11:42:41 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 11:42:41 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 11:44:15 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 11:44:15 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 11:44:41 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 11:44:41 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 11:44:45 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 11:44:45 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 11:44:45 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 11:44:45 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 11:45:27 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 11:45:27 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 11:45:27 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 11:45:27 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 11:52:51 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:52:51 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:53:19 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:53:19 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:53:47 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:53:47 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:54:28 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 11:54:28 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 11:54:44 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:54:44 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:57:12 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:57:12 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:58:20 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:58:20 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 11:59:46 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 11:59:46 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 12:00:09 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 12:00:09 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 12:00:14 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 12:00:14 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 12:02:34 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 12:02:34 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 12:02:34 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 12:02:34 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 12:02:50 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 12:02:50 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 12:07:12 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 12:07:12 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 12:08:33 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 12:08:33 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 12:08:42 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 12:08:42 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 12:08:43 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 12:08:43 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 12:08:49 - Modbus REST API - INFO - 307 - <built-in function process_time>
+25-Sep-26 12:08:49 - Modbus REST API - ERROR - 307 - <built-in function process_time>
+25-Sep-26 12:08:49 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 12:08:49 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 12:08:51 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 12:08:51 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 12:08:55 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 12:08:55 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 12:09:07 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 12:09:07 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 12:09:39 - Modbus REST API - INFO - 422 - <built-in function process_time>
+25-Sep-26 12:09:39 - Modbus REST API - ERROR - 422 - <built-in function process_time>
+25-Sep-26 13:11:22 - Modbus REST API - INFO - 422 - <built-in function process_time>
+25-Sep-26 13:11:22 - Modbus REST API - ERROR - 422 - <built-in function process_time>
+25-Sep-26 13:11:32 - Modbus REST API - INFO - 405 - <built-in function process_time>
+25-Sep-26 13:11:32 - Modbus REST API - ERROR - 405 - <built-in function process_time>
+25-Sep-26 13:11:41 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 13:11:41 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 13:11:47 - Modbus REST API - INFO - 405 - <built-in function process_time>
+25-Sep-26 13:11:47 - Modbus REST API - ERROR - 405 - <built-in function process_time>
+25-Sep-26 13:11:56 - Modbus REST API - INFO - 405 - <built-in function process_time>
+25-Sep-26 13:11:56 - Modbus REST API - ERROR - 405 - <built-in function process_time>
+25-Sep-26 13:12:00 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 13:12:00 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 13:12:07 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 13:12:07 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 13:12:15 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 13:12:15 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 13:12:38 - Modbus REST API - INFO - 400 - <built-in function process_time>
+25-Sep-26 13:12:38 - Modbus REST API - ERROR - 400 - <built-in function process_time>
+25-Sep-26 13:12:44 - Modbus REST API - INFO - 400 - <built-in function process_time>
+25-Sep-26 13:12:44 - Modbus REST API - ERROR - 400 - <built-in function process_time>
+25-Sep-26 13:13:11 - Modbus REST API - INFO - 400 - <built-in function process_time>
+25-Sep-26 13:13:11 - Modbus REST API - ERROR - 400 - <built-in function process_time>
+25-Sep-26 13:13:36 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 13:13:36 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 13:15:14 - Modbus REST API - INFO - 0 - <built-in function process_time>
+25-Sep-26 13:15:14 - Modbus REST API - ERROR - 0 - <built-in function process_time>
+25-Sep-26 13:15:27 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 13:15:27 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 13:15:31 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 13:15:31 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 13:15:39 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 13:15:39 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 13:15:42 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 13:15:42 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 13:20:17 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 13:20:17 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 13:20:20 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 13:20:20 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 13:21:40 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 13:21:40 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 13:22:53 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 13:22:53 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 13:25:41 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:25:41 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:26:28 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 13:26:28 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 13:27:00 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:27:00 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:27:12 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:27:12 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:32:17 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:32:17 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:33:24 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:33:24 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:36:08 - Modbus REST API - INFO - 500 - <built-in function process_time>
+25-Sep-26 13:36:08 - Modbus REST API - ERROR - 500 - <built-in function process_time>
+25-Sep-26 13:36:24 - Modbus REST API - INFO - 500 - <built-in function process_time>
+25-Sep-26 13:36:24 - Modbus REST API - ERROR - 500 - <built-in function process_time>
+25-Sep-26 13:36:42 - Modbus REST API - INFO - 500 - <built-in function process_time>
+25-Sep-26 13:36:42 - Modbus REST API - ERROR - 500 - <built-in function process_time>
+25-Sep-26 13:36:46 - Modbus REST API - INFO - 500 - <built-in function process_time>
+25-Sep-26 13:36:46 - Modbus REST API - ERROR - 500 - <built-in function process_time>
+25-Sep-26 13:36:51 - Modbus REST API - INFO - 500 - <built-in function process_time>
+25-Sep-26 13:36:51 - Modbus REST API - ERROR - 500 - <built-in function process_time>
+25-Sep-26 13:37:07 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:37:07 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:39:03 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:39:03 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:44:18 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 13:44:18 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 13:44:29 - Modbus REST API - INFO - 422 - <built-in function process_time>
+25-Sep-26 13:44:29 - Modbus REST API - ERROR - 422 - <built-in function process_time>
+25-Sep-26 13:44:54 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:44:54 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:52:28 - Modbus REST API - INFO - 404 - <built-in function process_time>
+25-Sep-26 13:52:28 - Modbus REST API - ERROR - 404 - <built-in function process_time>
+25-Sep-26 13:52:41 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:52:41 - Modbus REST API - INFO - 200 - <built-in function process_time>
+25-Sep-26 13:53:40 - Modbus REST API - INFO - 200 - 156.56ms
+25-Sep-26 13:53:40 - Modbus REST API - INFO - 200 - 156.56ms
+25-Sep-26 13:54:25 - Modbus REST API - INFO - 200 - 1790333665.2936456
+25-Sep-26 13:54:25 - Modbus REST API - INFO - 200 - 1790333665.2936456
+25-Sep-26 14:00:03 - Modbus REST API - INFO - 200 - 1790334003.60957 - 2026-09-25 14:00:03
+25-Sep-26 14:00:03 - Modbus REST API - INFO - 200 - 1790334003.60957 - 2026-09-25 14:00:03
+25-Sep-26 14:00:58 - Modbus REST API - INFO - 200 - 1790334058.2470834 - 2026-09-25 14:00:58
+25-Sep-26 14:00:58 - Modbus REST API - INFO - 200 - 1790334058.2470834 - 2026-09-25 14:00:58
+25-Sep-26 14:01:10 - Modbus REST API - INFO - 200 - 1790334070.480515 - 2026-09-25 14:01:10
+25-Sep-26 14:01:10 - Modbus REST API - INFO - 200 - 1790334070.480515 - 2026-09-25 14:01:10
+25-Sep-26 14:01:13 - Modbus REST API - INFO - 200 - 1790334073.2805579 - 2026-09-25 14:01:13
+25-Sep-26 14:01:13 - Modbus REST API - INFO - 200 - 1790334073.2805579 - 2026-09-25 14:01:13
+25-Sep-26 14:01:15 - Modbus REST API - INFO - 404 - 1790334075.3200588 - 2026-09-25 14:01:15
+25-Sep-26 14:01:15 - Modbus REST API - ERROR - 404 - 1790334075.3200588 - 2026-09-25 14:01:15
+25-Sep-26 14:01:44 - Modbus REST API - INFO - 200 - 1790334104.4274943 - 2026-09-25 14:01:44
+25-Sep-26 14:01:44 - Modbus REST API - INFO - 200 - 1790334104.4274943 - 2026-09-25 14:01:44
+25-Sep-26 14:01:57 - Modbus REST API - INFO - 200 - 1790334117.5570755 - 2026-09-25 14:01:57
+25-Sep-26 14:01:57 - Modbus REST API - INFO - 200 - 1790334117.5570755 - 2026-09-25 14:01:57
+25-Sep-26 14:02:02 - Modbus REST API - INFO - 404 - 1790334122.5759547 - 2026-09-25 14:02:02
+25-Sep-26 14:02:02 - Modbus REST API - ERROR - 404 - 1790334122.5759547 - 2026-09-25 14:02:02
+25-Sep-26 14:02:16 - Modbus REST API - INFO - 200 - 1790334135.9756398 - 2026-09-25 14:02:15
+25-Sep-26 14:02:16 - Modbus REST API - INFO - 200 - 1790334135.9756398 - 2026-09-25 14:02:15
+25-Sep-26 14:02:23 - Modbus REST API - INFO - 200 - 1790334143.4170876 - 2026-09-25 14:02:23
+25-Sep-26 14:02:23 - Modbus REST API - INFO - 200 - 1790334143.4170876 - 2026-09-25 14:02:23
+25-Sep-26 14:03:20 - Modbus REST API - INFO - 200 - 1790334200.1081295 - 2026-09-25 14:03:20
+25-Sep-26 14:03:20 - Modbus REST API - INFO - 200 - 1790334200.1081295 - 2026-09-25 14:03:20
+25-Sep-26 14:03:44 - Modbus REST API - INFO - 200 - 1790334224.6498353 - 2026-09-25 14:03:44
+25-Sep-26 14:03:44 - Modbus REST API - INFO - 200 - 1790334224.6498353 - 2026-09-25 14:03:44
+25-Sep-26 14:03:52 - Modbus REST API - INFO - 200 - 1790334232.4517336 - 2026-09-25 14:03:52
+25-Sep-26 14:03:52 - Modbus REST API - INFO - 200 - 1790334232.4517336 - 2026-09-25 14:03:52
+25-Sep-26 14:06:57 - Modbus REST API - INFO - 404 - 1790334417.3733644 - 2026-09-25 14:06:57
+25-Sep-26 14:06:57 - Modbus REST API - ERROR - 404 - 1790334417.3733644 - 2026-09-25 14:06:57
+25-Sep-26 14:07:58 - Modbus REST API - INFO - 422 - 1790334478.4923708 - 2026-09-25 14:07:58
+25-Sep-26 14:07:58 - Modbus REST API - ERROR - 422 - 1790334478.4923708 - 2026-09-25 14:07:58
+25-Sep-26 14:08:21 - Modbus REST API - INFO - 500 - 1790334501.0298254 - 2026-09-25 14:08:21
+25-Sep-26 14:08:21 - Modbus REST API - ERROR - 500 - 1790334501.0298254 - 2026-09-25 14:08:21
+25-Sep-26 14:09:49 - Modbus REST API - INFO - 200 - 1790334588.9471335 - 2026-09-25 14:09:48
+25-Sep-26 14:09:49 - Modbus REST API - INFO - 200 - 1790334588.9471335 - 2026-09-25 14:09:48
+25-Sep-26 14:09:54 - Modbus REST API - INFO - 422 - 1790334594.5039647 - 2026-09-25 14:09:54
+25-Sep-26 14:09:54 - Modbus REST API - ERROR - 422 - 1790334594.5039647 - 2026-09-25 14:09:54
+25-Sep-26 14:09:56 - Modbus REST API - INFO - 422 - 1790334596.1976874 - 2026-09-25 14:09:56
+25-Sep-26 14:09:56 - Modbus REST API - ERROR - 422 - 1790334596.1976874 - 2026-09-25 14:09:56
+25-Sep-26 14:09:58 - Modbus REST API - INFO - 200 - 1790334598.4361157 - 2026-09-25 14:09:58
+25-Sep-26 14:09:58 - Modbus REST API - INFO - 200 - 1790334598.4361157 - 2026-09-25 14:09:58
+25-Sep-26 14:09:58 - Modbus REST API - INFO - 200 - 1790334598.5525897 - 2026-09-25 14:09:58
+25-Sep-26 14:09:58 - Modbus REST API - INFO - 200 - 1790334598.5525897 - 2026-09-25 14:09:58
+25-Sep-26 14:10:25 - Modbus REST API - INFO - 200 - 1790334625.6502724 - 2026-09-25 14:10:25
+25-Sep-26 14:10:25 - Modbus REST API - INFO - 200 - 1790334625.6502724 - 2026-09-25 14:10:25
+25-Sep-26 14:10:33 - Modbus REST API - INFO - 200 - 1790334633.74464 - 2026-09-25 14:10:33
+25-Sep-26 14:10:33 - Modbus REST API - INFO - 200 - 1790334633.74464 - 2026-09-25 14:10:33
+25-Sep-26 14:10:51 - Modbus REST API - INFO - 200 - 1790334651.826089 - 2026-09-25 14:10:51
+25-Sep-26 14:10:51 - Modbus REST API - INFO - 200 - 1790334651.826089 - 2026-09-25 14:10:51
+25-Sep-26 14:10:53 - Modbus REST API - INFO - 200 - 1790334653.5141356 - 2026-09-25 14:10:53
+25-Sep-26 14:10:53 - Modbus REST API - INFO - 200 - 1790334653.5141356 - 2026-09-25 14:10:53
+25-Sep-26 14:11:00 - Modbus REST API - INFO - 422 - 1790334660.1594505 - 2026-09-25 14:11:00
+25-Sep-26 14:11:00 - Modbus REST API - ERROR - 422 - 1790334660.1594505 - 2026-09-25 14:11:00
+25-Sep-26 14:11:12 - Modbus REST API - INFO - 200 - 1790334672.3132234 - 2026-09-25 14:11:12
+25-Sep-26 14:11:12 - Modbus REST API - INFO - 200 - 1790334672.3132234 - 2026-09-25 14:11:12
+25-Sep-26 14:11:12 - Modbus REST API - INFO - 200 - 1790334672.3979945 - 2026-09-25 14:11:12
+25-Sep-26 14:11:12 - Modbus REST API - INFO - 200 - 1790334672.3979945 - 2026-09-25 14:11:12
+25-Sep-26 14:12:07 - Modbus REST API - INFO - 200 - 1790334727.8014917 - 2026-09-25 14:12:07
+25-Sep-26 14:12:07 - Modbus REST API - INFO - 200 - 1790334727.8014917 - 2026-09-25 14:12:07
+25-Sep-26 14:12:40 - Modbus REST API - INFO - 200 - 1790334760.5815926 - 2026-09-25 14:12:40
+25-Sep-26 14:12:40 - Modbus REST API - INFO - 200 - 1790334760.5815926 - 2026-09-25 14:12:40
+25-Sep-26 14:12:40 - Modbus REST API - INFO - 200 - 1790334760.6292849 - 2026-09-25 14:12:40
+25-Sep-26 14:12:40 - Modbus REST API - INFO - 200 - 1790334760.6292849 - 2026-09-25 14:12:40
+25-Sep-26 14:13:13 - Modbus REST API - INFO - 200 - 1790334793.7594466 - 2026-09-25 14:13:13
+25-Sep-26 14:13:13 - Modbus REST API - INFO - 200 - 1790334793.7594466 - 2026-09-25 14:13:13
+25-Sep-26 14:13:45 - Modbus REST API - INFO - 200 - 1790334825.2909212 - 2026-09-25 14:13:45
+25-Sep-26 14:13:45 - Modbus REST API - INFO - 200 - 1790334825.2909212 - 2026-09-25 14:13:45
+25-Sep-26 14:14:10 - Modbus REST API - INFO - 500 - 1790334850.5139725 - 2026-09-25 14:14:10
+25-Sep-26 14:14:10 - Modbus REST API - ERROR - 500 - 1790334850.5139725 - 2026-09-25 14:14:10
+25-Sep-26 14:14:18 - Modbus REST API - INFO - 200 - 1790334858.663602 - 2026-09-25 14:14:18
+25-Sep-26 14:14:18 - Modbus REST API - INFO - 200 - 1790334858.663602 - 2026-09-25 14:14:18
+25-Sep-26 14:16:38 - Modbus REST API - INFO - 200 - 1790334998.5624528 - 2026-09-25 14:16:38
+25-Sep-26 14:16:38 - Modbus REST API - INFO - 200 - 1790334998.5624528 - 2026-09-25 14:16:38
+25-Sep-26 14:16:48 - Modbus REST API - INFO - 405 - 1790335008.8108945 - 2026-09-25 14:16:48
+25-Sep-26 14:16:48 - Modbus REST API - ERROR - 405 - 1790335008.8108945 - 2026-09-25 14:16:48
+25-Sep-26 14:16:57 - Modbus REST API - INFO - 405 - 1790335017.505228 - 2026-09-25 14:16:57
+25-Sep-26 14:16:57 - Modbus REST API - ERROR - 405 - 1790335017.505228 - 2026-09-25 14:16:57
+25-Sep-26 14:17:03 - Modbus REST API - INFO - 500 - 1790335023.6018083 - 2026-09-25 14:17:03
+25-Sep-26 14:17:03 - Modbus REST API - ERROR - 500 - 1790335023.6018083 - 2026-09-25 14:17:03
+25-Sep-26 14:17:27 - Modbus REST API - INFO - 200 - 1790335047.654161 - 2026-09-25 14:17:27
+25-Sep-26 14:17:27 - Modbus REST API - INFO - 200 - 1790335047.654161 - 2026-09-25 14:17:27
+25-Sep-26 14:17:40 - Modbus REST API - INFO - 500 - 1790335060.1845882 - 2026-09-25 14:17:40
+25-Sep-26 14:17:40 - Modbus REST API - ERROR - 500 - 1790335060.1845882 - 2026-09-25 14:17:40
+25-Sep-26 14:18:00 - Modbus REST API - INFO - 500 - 1790335080.8519778 - 2026-09-25 14:18:00
+25-Sep-26 14:18:00 - Modbus REST API - ERROR - 500 - 1790335080.8519778 - 2026-09-25 14:18:00
+25-Sep-26 14:19:17 - Modbus REST API - INFO - 500 - 1790335157.1026974 - 2026-09-25 14:19:17
+25-Sep-26 14:19:17 - Modbus REST API - ERROR - 500 - 1790335157.1026974 - 2026-09-25 14:19:17
+25-Sep-26 14:20:24 - Modbus REST API - INFO - 500 - 1790335224.8277428 - 2026-09-25 14:20:24
+25-Sep-26 14:20:24 - Modbus REST API - ERROR - 500 - 1790335224.8277428 - 2026-09-25 14:20:24
+25-Sep-26 14:21:26 - Modbus REST API - INFO - 404 - 1790335286.9226797 - 2026-09-25 14:21:26
+25-Sep-26 14:21:26 - Modbus REST API - ERROR - 404 - 1790335286.9226797 - 2026-09-25 14:21:26
+25-Sep-26 14:21:31 - Modbus REST API - INFO - 200 - 1790335291.1217005 - 2026-09-25 14:21:31
+25-Sep-26 14:21:31 - Modbus REST API - INFO - 200 - 1790335291.1217005 - 2026-09-25 14:21:31
+25-Sep-26 14:21:35 - Modbus REST API - INFO - 307 - 1790335295.8464682 - 2026-09-25 14:21:35
+25-Sep-26 14:21:35 - Modbus REST API - ERROR - 307 - 1790335295.8464682 - 2026-09-25 14:21:35
+25-Sep-26 14:21:35 - Modbus REST API - INFO - 200 - 1790335295.8609674 - 2026-09-25 14:21:35
+25-Sep-26 14:21:35 - Modbus REST API - INFO - 200 - 1790335295.8609674 - 2026-09-25 14:21:35
+25-Sep-26 14:21:36 - Modbus REST API - INFO - 200 - 1790335296.0395987 - 2026-09-25 14:21:36
+25-Sep-26 14:21:36 - Modbus REST API - INFO - 200 - 1790335296.0395987 - 2026-09-25 14:21:36
+25-Sep-26 14:22:21 - Modbus REST API - INFO - 500 - 1790335341.5952992 - 2026-09-25 14:22:21
+25-Sep-26 14:22:21 - Modbus REST API - ERROR - 500 - 1790335341.5952992 - 2026-09-25 14:22:21
+25-Sep-26 14:24:08 - Modbus REST API - INFO - 500 - 1790335448.0693684 - 2026-09-25 14:24:08
+25-Sep-26 14:24:08 - Modbus REST API - ERROR - 500 - 1790335448.0693684 - 2026-09-25 14:24:08
+25-Sep-26 14:24:29 - Modbus REST API - INFO - 200 - 1790335469.2788045 - 2026-09-25 14:24:29
+25-Sep-26 14:24:29 - Modbus REST API - INFO - 200 - 1790335469.2788045 - 2026-09-25 14:24:29
+25-Sep-26 14:24:43 - Modbus REST API - INFO - 200 - 1790335483.5992563 - 2026-09-25 14:24:43
+25-Sep-26 14:24:43 - Modbus REST API - INFO - 200 - 1790335483.5992563 - 2026-09-25 14:24:43
+25-Sep-26 14:24:44 - Modbus REST API - INFO - 200 - 1790335484.2636921 - 2026-09-25 14:24:44
+25-Sep-26 14:24:44 - Modbus REST API - INFO - 200 - 1790335484.2636921 - 2026-09-25 14:24:44
+25-Sep-26 14:25:25 - Modbus REST API - INFO - 422 - 1790335525.5938473 - 2026-09-25 14:25:25
+25-Sep-26 14:25:25 - Modbus REST API - ERROR - 422 - 1790335525.5938473 - 2026-09-25 14:25:25
+25-Sep-26 14:25:36 - Modbus REST API - INFO - 422 - 1790335536.1730034 - 2026-09-25 14:25:36
+25-Sep-26 14:25:36 - Modbus REST API - ERROR - 422 - 1790335536.1730034 - 2026-09-25 14:25:36
+25-Sep-26 14:25:45 - Modbus REST API - INFO - 200 - 1790335545.4025583 - 2026-09-25 14:25:45
+25-Sep-26 14:25:45 - Modbus REST API - INFO - 200 - 1790335545.4025583 - 2026-09-25 14:25:45
+25-Sep-26 14:26:11 - Modbus REST API - INFO - 200 - 1790335571.0477395 - 2026-09-25 14:26:11
+25-Sep-26 14:26:11 - Modbus REST API - INFO - 200 - 1790335571.0477395 - 2026-09-25 14:26:11
+25-Sep-26 14:26:40 - Modbus REST API - INFO - 200 - 1790335600.8880792 - 2026-09-25 14:26:40
+25-Sep-26 14:26:40 - Modbus REST API - INFO - 200 - 1790335600.8880792 - 2026-09-25 14:26:40
+25-Sep-26 14:28:28 - Modbus REST API - INFO - 200 - 1790335708.039223 - 2026-09-25 14:28:28
+25-Sep-26 14:28:28 - Modbus REST API - INFO - 200 - 1790335708.039223 - 2026-09-25 14:28:28
+25-Sep-26 14:28:48 - Modbus REST API - INFO - 200 - 1790335727.933592 - 2026-09-25 14:28:47
+25-Sep-26 14:28:48 - Modbus REST API - INFO - 200 - 1790335727.933592 - 2026-09-25 14:28:47
+25-Sep-26 14:32:37 - Modbus REST API - INFO - 500 - 1790335957.7217247 - 2026-09-25 14:32:37
+25-Sep-26 14:32:37 - Modbus REST API - ERROR - 500 - 1790335957.7217247 - 2026-09-25 14:32:37
+25-Sep-26 14:33:45 - Modbus REST API - INFO - 200 - 1790336025.8309505 - 2026-09-25 14:33:45
+25-Sep-26 14:33:45 - Modbus REST API - INFO - 200 - 1790336025.8309505 - 2026-09-25 14:33:45
+25-Sep-26 14:39:27 - Modbus REST API - INFO - 200 - 1790336366.9086232 - 2026-09-25 14:39:26
+25-Sep-26 14:39:27 - Modbus REST API - INFO - 200 - 1790336366.9086232 - 2026-09-25 14:39:26
+25-Sep-26 14:55:11 - Modbus REST API - INFO - 200 - 1790337311.0251818 - 2026-09-25 14:55:11
+25-Sep-26 14:55:11 - Modbus REST API - INFO - 200 - 1790337311.0251818 - 2026-09-25 14:55:11
+25-Sep-26 14:55:13 - Modbus REST API - INFO - 200 - 1790337313.8528035 - 2026-09-25 14:55:13
+25-Sep-26 14:55:13 - Modbus REST API - INFO - 200 - 1790337313.8528035 - 2026-09-25 14:55:13
+25-Sep-26 14:55:14 - Modbus REST API - INFO - 200 - 1790337313.9877138 - 2026-09-25 14:55:13
+25-Sep-26 14:55:14 - Modbus REST API - INFO - 200 - 1790337313.9877138 - 2026-09-25 14:55:13
+25-Sep-26 14:59:28 - Modbus REST API - INFO - 200 - 1790337568.7661488 - 2026-09-25 14:59:28
+25-Sep-26 14:59:28 - Modbus REST API - INFO - 200 - 1790337568.7661488 - 2026-09-25 14:59:28
+25-Sep-26 14:59:28 - Modbus REST API - INFO - 200 - 1790337568.8239696 - 2026-09-25 14:59:28
+25-Sep-26 14:59:28 - Modbus REST API - INFO - 200 - 1790337568.8239696 - 2026-09-25 14:59:28
+25-Sep-26 14:59:35 - Modbus REST API - INFO - 200 - 1790337574.997284 - 2026-09-25 14:59:34
+25-Sep-26 14:59:35 - Modbus REST API - INFO - 200 - 1790337574.997284 - 2026-09-25 14:59:34
+25-Sep-26 14:59:56 - Modbus REST API - INFO - 500 - 1790337596.0117953 - 2026-09-25 14:59:56
+25-Sep-26 14:59:56 - Modbus REST API - ERROR - 500 - 1790337596.0117953 - 2026-09-25 14:59:56
+25-Sep-26 15:00:24 - Modbus REST API - INFO - 500 - 1790337624.1423163 - 2026-09-25 15:00:24
+25-Sep-26 15:00:24 - Modbus REST API - ERROR - 500 - 1790337624.1423163 - 2026-09-25 15:00:24
+25-Sep-26 15:00:51 - Modbus REST API - INFO - 500 - 1790337651.507473 - 2026-09-25 15:00:51
+25-Sep-26 15:00:51 - Modbus REST API - ERROR - 500 - 1790337651.507473 - 2026-09-25 15:00:51
+25-Sep-26 15:01:43 - Modbus REST API - INFO - 500 - 1790337703.5422366 - 2026-09-25 15:01:43
+25-Sep-26 15:01:43 - Modbus REST API - ERROR - 500 - 1790337703.5422366 - 2026-09-25 15:01:43
+25-Sep-26 15:02:45 - Modbus REST API - INFO - 500 - 1790337765.6248934 - 2026-09-25 15:02:45
+25-Sep-26 15:02:45 - Modbus REST API - ERROR - 500 - 1790337765.6248934 - 2026-09-25 15:02:45
+25-Sep-26 15:03:39 - Modbus REST API - INFO - 500 - 1790337819.261906 - 2026-09-25 15:03:39
+25-Sep-26 15:03:39 - Modbus REST API - ERROR - 500 - 1790337819.261906 - 2026-09-25 15:03:39
+25-Sep-26 15:04:20 - Modbus REST API - INFO - 500 - 1790337860.1335883 - 2026-09-25 15:04:20
+25-Sep-26 15:04:20 - Modbus REST API - ERROR - 500 - 1790337860.1335883 - 2026-09-25 15:04:20
+25-Sep-26 15:04:47 - Modbus REST API - INFO - 500 - 1790337887.461394 - 2026-09-25 15:04:47
+25-Sep-26 15:04:47 - Modbus REST API - ERROR - 500 - 1790337887.461394 - 2026-09-25 15:04:47
+25-Sep-26 15:04:58 - Modbus REST API - INFO - 200 - 1790337898.0949605 - 2026-09-25 15:04:58
+25-Sep-26 15:04:58 - Modbus REST API - INFO - 200 - 1790337898.0949605 - 2026-09-25 15:04:58
+25-Sep-26 15:04:58 - Modbus REST API - INFO - 200 - 1790337898.193912 - 2026-09-25 15:04:58
+25-Sep-26 15:04:58 - Modbus REST API - INFO - 200 - 1790337898.193912 - 2026-09-25 15:04:58
+25-Sep-26 15:05:21 - Modbus REST API - INFO - 500 - 1790337921.023474 - 2026-09-25 15:05:21
+25-Sep-26 15:05:21 - Modbus REST API - ERROR - 500 - 1790337921.023474 - 2026-09-25 15:05:21
+25-Sep-26 15:05:45 - Modbus REST API - INFO - 500 - 1790337945.258694 - 2026-09-25 15:05:45
+25-Sep-26 15:05:45 - Modbus REST API - ERROR - 500 - 1790337945.258694 - 2026-09-25 15:05:45
+25-Sep-26 15:05:59 - Modbus REST API - INFO - 500 - 1790337959.637414 - 2026-09-25 15:05:59
+25-Sep-26 15:05:59 - Modbus REST API - ERROR - 500 - 1790337959.637414 - 2026-09-25 15:05:59
+25-Sep-26 15:06:25 - Modbus REST API - INFO - 500 - 1790337985.604849 - 2026-09-25 15:06:25
+25-Sep-26 15:06:25 - Modbus REST API - ERROR - 500 - 1790337985.604849 - 2026-09-25 15:06:25
+25-Sep-26 15:07:22 - Modbus REST API - INFO - 200 - 1790338042.924492 - 2026-09-25 15:07:22
+25-Sep-26 15:07:22 - Modbus REST API - INFO - 200 - 1790338042.924492 - 2026-09-25 15:07:22
+25-Sep-26 15:08:18 - Modbus REST API - INFO - 200 - 1790338098.9466915 - 2026-09-25 15:08:18
+25-Sep-26 15:08:18 - Modbus REST API - INFO - 200 - 1790338098.9466915 - 2026-09-25 15:08:18
+25-Sep-26 15:18:04 - Modbus REST API - INFO - 200 - 1790338684.2160378 - 2026-09-25 15:18:04
+25-Sep-26 15:18:04 - Modbus REST API - INFO - 200 - 1790338684.2160378 - 2026-09-25 15:18:04
+25-Sep-26 15:18:27 - Modbus REST API - INFO - 200 - 1790338707.2037992 - 2026-09-25 15:18:27
+25-Sep-26 15:18:27 - Modbus REST API - INFO - 200 - 1790338707.2037992 - 2026-09-25 15:18:27
+25-Sep-26 15:18:35 - Modbus REST API - INFO - 200 - 1790338715.124658 - 2026-09-25 15:18:35
+25-Sep-26 15:18:35 - Modbus REST API - INFO - 200 - 1790338715.124658 - 2026-09-25 15:18:35
+25-Sep-26 15:18:51 - Modbus REST API - INFO - 200 - 1790338731.257107 - 2026-09-25 15:18:51
+25-Sep-26 15:18:51 - Modbus REST API - INFO - 200 - 1790338731.257107 - 2026-09-25 15:18:51
+25-Sep-26 15:18:59 - Modbus REST API - INFO - 200 - 1790338739.5987763 - 2026-09-25 15:18:59
+25-Sep-26 15:18:59 - Modbus REST API - INFO - 200 - 1790338739.5987763 - 2026-09-25 15:18:59
+25-Sep-26 15:26:03 - Modbus REST API - INFO - 200 - 1790339163.3420315 - 2026-09-25 15:26:03
+25-Sep-26 15:26:03 - Modbus REST API - INFO - 200 - 1790339163.3420315 - 2026-09-25 15:26:03
+25-Sep-26 15:26:03 - Modbus REST API - INFO - 200 - 1790339163.4941022 - 2026-09-25 15:26:03
+25-Sep-26 15:26:03 - Modbus REST API - INFO - 200 - 1790339163.4941022 - 2026-09-25 15:26:03
+25-Sep-26 15:26:12 - Modbus REST API - INFO - 200 - 1790339172.1350627 - 2026-09-25 15:26:12
+25-Sep-26 15:26:12 - Modbus REST API - INFO - 200 - 1790339172.1350627 - 2026-09-25 15:26:12
+25-Sep-26 15:26:28 - Modbus REST API - INFO - 200 - 1790339188.7236607 - 2026-09-25 15:26:28
+25-Sep-26 15:26:28 - Modbus REST API - INFO - 200 - 1790339188.7236607 - 2026-09-25 15:26:28
+25-Sep-26 15:26:39 - Modbus REST API - INFO - 200 - 1790339199.1713965 - 2026-09-25 15:26:39
+25-Sep-26 15:26:39 - Modbus REST API - INFO - 200 - 1790339199.1713965 - 2026-09-25 15:26:39
+25-Sep-26 15:29:02 - Modbus REST API - INFO - 200 - 1790339342.8913045 - 2026-09-25 15:29:02
+25-Sep-26 15:29:02 - Modbus REST API - INFO - 200 - 1790339342.8913045 - 2026-09-25 15:29:02
+25-Sep-26 15:29:02 - Modbus REST API - INFO - 200 - 1790339342.9687278 - 2026-09-25 15:29:02
+25-Sep-26 15:29:02 - Modbus REST API - INFO - 200 - 1790339342.9687278 - 2026-09-25 15:29:02
+25-Sep-26 15:30:48 - Modbus REST API - INFO - 200 - 1790339448.4771335 - 2026-09-25 15:30:48
+25-Sep-26 15:30:48 - Modbus REST API - INFO - 200 - 1790339448.4771335 - 2026-09-25 15:30:48
+25-Sep-26 15:30:48 - Modbus REST API - INFO - 200 - 1790339448.5644524 - 2026-09-25 15:30:48
+25-Sep-26 15:30:48 - Modbus REST API - INFO - 200 - 1790339448.5644524 - 2026-09-25 15:30:48
+25-Sep-26 15:31:26 - Modbus REST API - INFO - 200 - 1790339486.8826947 - 2026-09-25 15:31:26
+25-Sep-26 15:31:26 - Modbus REST API - INFO - 200 - 1790339486.8826947 - 2026-09-25 15:31:26
+25-Sep-26 15:31:26 - Modbus REST API - INFO - 200 - 1790339486.956646 - 2026-09-25 15:31:26
+25-Sep-26 15:31:26 - Modbus REST API - INFO - 200 - 1790339486.956646 - 2026-09-25 15:31:26
+25-Sep-26 15:31:37 - Modbus REST API - INFO - 200 - 1790339497.5876467 - 2026-09-25 15:31:37
+25-Sep-26 15:31:37 - Modbus REST API - INFO - 200 - 1790339497.5876467 - 2026-09-25 15:31:37
+25-Sep-26 15:31:37 - Modbus REST API - INFO - 200 - 1790339497.6849399 - 2026-09-25 15:31:37
+25-Sep-26 15:31:37 - Modbus REST API - INFO - 200 - 1790339497.6849399 - 2026-09-25 15:31:37
+25-Sep-26 15:32:04 - Modbus REST API - INFO - 200 - 1790339524.6276877 - 2026-09-25 15:32:04
+25-Sep-26 15:32:04 - Modbus REST API - INFO - 200 - 1790339524.6276877 - 2026-09-25 15:32:04
+25-Sep-26 15:32:04 - Modbus REST API - INFO - 200 - 1790339524.702713 - 2026-09-25 15:32:04
+25-Sep-26 15:32:04 - Modbus REST API - INFO - 200 - 1790339524.702713 - 2026-09-25 15:32:04
+25-Sep-26 15:32:21 - Modbus REST API - INFO - 200 - 1790339541.5036993 - 2026-09-25 15:32:21
+25-Sep-26 15:32:21 - Modbus REST API - INFO - 200 - 1790339541.5036993 - 2026-09-25 15:32:21
+25-Sep-26 15:32:21 - Modbus REST API - INFO - 200 - 1790339541.5625947 - 2026-09-25 15:32:21
+25-Sep-26 15:32:21 - Modbus REST API - INFO - 200 - 1790339541.5625947 - 2026-09-25 15:32:21
+25-Sep-26 15:32:34 - Modbus REST API - INFO - 307 - 1790339554.6003664 - 2026-09-25 15:32:34
+25-Sep-26 15:32:34 - Modbus REST API - ERROR - 307 - 1790339554.6003664 - 2026-09-25 15:32:34
+25-Sep-26 15:32:34 - Modbus REST API - INFO - 200 - 1790339554.658676 - 2026-09-25 15:32:34
+25-Sep-26 15:32:34 - Modbus REST API - INFO - 200 - 1790339554.658676 - 2026-09-25 15:32:34
+25-Sep-26 15:32:51 - Modbus REST API - INFO - 500 - 1790339571.958267 - 2026-09-25 15:32:51
+25-Sep-26 15:32:51 - Modbus REST API - ERROR - 500 - 1790339571.958267 - 2026-09-25 15:32:51
+25-Sep-26 15:33:33 - Modbus REST API - INFO - 200 - 1790339613.0272179 - 2026-09-25 15:33:33
+25-Sep-26 15:33:33 - Modbus REST API - INFO - 200 - 1790339613.0272179 - 2026-09-25 15:33:33
+25-Sep-26 15:33:38 - Modbus REST API - INFO - 307 - 1790339618.2122777 - 2026-09-25 15:33:38
+25-Sep-26 15:33:38 - Modbus REST API - ERROR - 307 - 1790339618.2122777 - 2026-09-25 15:33:38
+25-Sep-26 15:33:38 - Modbus REST API - INFO - 200 - 1790339618.3091664 - 2026-09-25 15:33:38
+25-Sep-26 15:33:38 - Modbus REST API - INFO - 200 - 1790339618.3091664 - 2026-09-25 15:33:38
+25-Sep-26 15:34:02 - Modbus REST API - INFO - 404 - 1790339642.7221105 - 2026-09-25 15:34:02
+25-Sep-26 15:34:02 - Modbus REST API - ERROR - 404 - 1790339642.7221105 - 2026-09-25 15:34:02
+25-Sep-26 15:34:53 - Modbus REST API - INFO - 200 - 1790339693.2898927 - 2026-09-25 15:34:53
+25-Sep-26 15:34:53 - Modbus REST API - INFO - 200 - 1790339693.2898927 - 2026-09-25 15:34:53
+25-Sep-26 15:34:53 - Modbus REST API - INFO - 200 - 1790339693.3487785 - 2026-09-25 15:34:53
+25-Sep-26 15:34:53 - Modbus REST API - INFO - 200 - 1790339693.3487785 - 2026-09-25 15:34:53
+25-Sep-26 15:35:43 - Modbus REST API - INFO - 200 - 1790339743.0026257 - 2026-09-25 15:35:43
+25-Sep-26 15:35:43 - Modbus REST API - INFO - 200 - 1790339743.0026257 - 2026-09-25 15:35:43
+25-Sep-26 15:35:43 - Modbus REST API - INFO - 200 - 1790339743.0833323 - 2026-09-25 15:35:43
+25-Sep-26 15:35:43 - Modbus REST API - INFO - 200 - 1790339743.0833323 - 2026-09-25 15:35:43
+25-Sep-26 15:36:05 - Modbus REST API - INFO - 200 - 1790339765.41543 - 2026-09-25 15:36:05
+25-Sep-26 15:36:05 - Modbus REST API - INFO - 200 - 1790339765.41543 - 2026-09-25 15:36:05
+25-Sep-26 15:36:05 - Modbus REST API - INFO - 200 - 1790339765.525175 - 2026-09-25 15:36:05
+25-Sep-26 15:36:05 - Modbus REST API - INFO - 200 - 1790339765.525175 - 2026-09-25 15:36:05
+25-Sep-26 15:37:27 - Modbus REST API - INFO - 200 - 1790339847.2810743 - 2026-09-25 15:37:27
+25-Sep-26 15:37:27 - Modbus REST API - INFO - 200 - 1790339847.2810743 - 2026-09-25 15:37:27
+25-Sep-26 15:37:27 - Modbus REST API - INFO - 200 - 1790339847.6579375 - 2026-09-25 15:37:27
+25-Sep-26 15:37:27 - Modbus REST API - INFO - 200 - 1790339847.6579375 - 2026-09-25 15:37:27
+25-Sep-26 15:37:27 - Modbus REST API - INFO - 200 - 1790339847.7422984 - 2026-09-25 15:37:27
+25-Sep-26 15:37:27 - Modbus REST API - INFO - 200 - 1790339847.7422984 - 2026-09-25 15:37:27
+25-Sep-26 15:37:30 - Modbus REST API - INFO - 200 - 1790339850.2736967 - 2026-09-25 15:37:30
+25-Sep-26 15:37:30 - Modbus REST API - INFO - 200 - 1790339850.2736967 - 2026-09-25 15:37:30
+25-Sep-26 15:39:50 - Modbus REST API - INFO - 404 - 1790339990.2888558 - 2026-09-25 15:39:50
+25-Sep-26 15:39:50 - Modbus REST API - ERROR - 404 - 1790339990.2888558 - 2026-09-25 15:39:50
+25-Sep-26 15:45:22 - Modbus REST API - INFO - 200 - 1790340322.9802089 - 2026-09-25 15:45:22
+25-Sep-26 15:45:22 - Modbus REST API - INFO - 200 - 1790340322.9802089 - 2026-09-25 15:45:22
+25-Sep-26 15:45:23 - Modbus REST API - INFO - 200 - 1790340323.0805266 - 2026-09-25 15:45:23
+25-Sep-26 15:45:23 - Modbus REST API - INFO - 200 - 1790340323.0805266 - 2026-09-25 15:45:23
+25-Sep-26 15:48:00 - Modbus REST API - INFO - 200 - 1790340480.9232757 - 2026-09-25 15:48:00
+25-Sep-26 15:48:00 - Modbus REST API - INFO - 200 - 1790340480.9232757 - 2026-09-25 15:48:00
+25-Sep-26 15:48:52 - Modbus REST API - INFO - 307 - 1790340532.2668064 - 2026-09-25 15:48:52
+25-Sep-26 15:48:52 - Modbus REST API - ERROR - 307 - 1790340532.2668064 - 2026-09-25 15:48:52
+25-Sep-26 15:48:52 - Modbus REST API - INFO - 200 - 1790340532.283356 - 2026-09-25 15:48:52
+25-Sep-26 15:48:52 - Modbus REST API - INFO - 200 - 1790340532.283356 - 2026-09-25 15:48:52
+25-Sep-26 15:49:09 - Modbus REST API - INFO - 307 - 1790340549.3907418 - 2026-09-25 15:49:09
+25-Sep-26 15:49:09 - Modbus REST API - ERROR - 307 - 1790340549.3907418 - 2026-09-25 15:49:09
+25-Sep-26 15:49:09 - Modbus REST API - INFO - 200 - 1790340549.516714 - 2026-09-25 15:49:09
+25-Sep-26 15:49:09 - Modbus REST API - INFO - 200 - 1790340549.516714 - 2026-09-25 15:49:09
+25-Sep-26 15:51:43 - Modbus REST API - INFO - 200 - 1790340703.5781443 - 2026-09-25 15:51:43
+25-Sep-26 15:51:43 - Modbus REST API - INFO - 200 - 1790340703.5781443 - 2026-09-25 15:51:43
+25-Sep-26 15:52:06 - Modbus REST API - INFO - 404 - 1790340725.9414003 - 2026-09-25 15:52:05
+25-Sep-26 15:52:06 - Modbus REST API - ERROR - 404 - 1790340725.9414003 - 2026-09-25 15:52:05
+25-Sep-26 16:01:07 - Modbus REST API - INFO - 200 - 1790341267.0924194 - 2026-09-25 16:01:07
+25-Sep-26 16:01:07 - Modbus REST API - INFO - 200 - 1790341267.0924194 - 2026-09-25 16:01:07
+25-Sep-26 16:01:16 - Modbus REST API - INFO - 200 - 1790341276.0592344 - 2026-09-25 16:01:16
+25-Sep-26 16:01:16 - Modbus REST API - INFO - 200 - 1790341276.0592344 - 2026-09-25 16:01:16
+25-Sep-26 16:01:27 - Modbus REST API - INFO - 200 - 1790341287.545114 - 2026-09-25 16:01:27
+25-Sep-26 16:01:27 - Modbus REST API - INFO - 200 - 1790341287.545114 - 2026-09-25 16:01:27
+25-Sep-26 16:01:29 - Modbus REST API - INFO - 200 - 1790341289.535528 - 2026-09-25 16:01:29
+25-Sep-26 16:01:29 - Modbus REST API - INFO - 200 - 1790341289.535528 - 2026-09-25 16:01:29
+25-Sep-26 16:04:06 - Modbus REST API - INFO - 200 - 1790341446.0221605 - 2026-09-25 16:04:06
+25-Sep-26 16:04:06 - Modbus REST API - INFO - 200 - 1790341446.0221605 - 2026-09-25 16:04:06
+25-Sep-26 16:04:11 - Modbus REST API - INFO - 200 - 1790341451.2412653 - 2026-09-25 16:04:11
+25-Sep-26 16:04:11 - Modbus REST API - INFO - 200 - 1790341451.2412653 - 2026-09-25 16:04:11
+25-Sep-26 16:35:03 - Modbus REST API - INFO - 200 - 1790343303.2136455 - 2026-09-25 16:35:03
+25-Sep-26 16:35:03 - Modbus REST API - INFO - 200 - 1790343303.2136455 - 2026-09-25 16:35:03
+25-Sep-26 16:35:16 - Modbus REST API - INFO - 200 - 1790343316.0451345 - 2026-09-25 16:35:16
+25-Sep-26 16:35:16 - Modbus REST API - INFO - 200 - 1790343316.0451345 - 2026-09-25 16:35:16
+25-Sep-26 16:35:41 - Modbus REST API - INFO - 200 - 1790343341.4000058 - 2026-09-25 16:35:41
+25-Sep-26 16:35:41 - Modbus REST API - INFO - 200 - 1790343341.4000058 - 2026-09-25 16:35:41
+25-Sep-26 16:36:10 - Modbus REST API - INFO - 200 - 1790343370.029884 - 2026-09-25 16:36:10
+25-Sep-26 16:36:10 - Modbus REST API - INFO - 200 - 1790343370.029884 - 2026-09-25 16:36:10
+25-Sep-26 16:36:16 - Modbus REST API - INFO - 200 - 1790343376.6810384 - 2026-09-25 16:36:16
+25-Sep-26 16:36:16 - Modbus REST API - INFO - 200 - 1790343376.6810384 - 2026-09-25 16:36:16
+25-Sep-26 16:54:16 - Modbus REST API - INFO - 200 - 1790344456.195125 - 2026-09-25 16:54:16
+25-Sep-26 16:54:16 - Modbus REST API - INFO - 200 - 1790344456.195125 - 2026-09-25 16:54:16
+25-Sep-26 16:54:16 - Modbus REST API - INFO - 200 - 1790344456.3375142 - 2026-09-25 16:54:16
+25-Sep-26 16:54:16 - Modbus REST API - INFO - 200 - 1790344456.3375142 - 2026-09-25 16:54:16
+25-Sep-26 16:54:21 - Modbus REST API - INFO - 200 - 1790344461.2108274 - 2026-09-25 16:54:21
+25-Sep-26 16:54:21 - Modbus REST API - INFO - 200 - 1790344461.2108274 - 2026-09-25 16:54:21
+25-Sep-26 16:57:01 - Modbus REST API - INFO - 200 - 1790344621.8266747 - 2026-09-25 16:57:01
+25-Sep-26 16:57:01 - Modbus REST API - INFO - 200 - 1790344621.8266747 - 2026-09-25 16:57:01
+25-Sep-26 16:57:37 - Modbus REST API - INFO - 200 - 1790344657.1412492 - 2026-09-25 16:57:37
+25-Sep-26 16:57:37 - Modbus REST API - INFO - 200 - 1790344657.1412492 - 2026-09-25 16:57:37
+25-Sep-26 16:59:02 - Modbus REST API - INFO - 200 - 1790344742.564492 - 2026-09-25 16:59:02
+25-Sep-26 16:59:02 - Modbus REST API - INFO - 200 - 1790344742.564492 - 2026-09-25 16:59:02
+25-Sep-26 16:59:15 - Modbus REST API - INFO - 422 - 1790344755.5752034 - 2026-09-25 16:59:15
+25-Sep-26 16:59:15 - Modbus REST API - ERROR - 422 - 1790344755.5752034 - 2026-09-25 16:59:15
+25-Sep-26 16:59:15 - Modbus REST API - INFO - 404 - 1790344755.5946527 - 2026-09-25 16:59:15
+25-Sep-26 16:59:15 - Modbus REST API - ERROR - 404 - 1790344755.5946527 - 2026-09-25 16:59:15
+25-Sep-26 16:59:21 - Modbus REST API - INFO - 422 - 1790344761.994831 - 2026-09-25 16:59:21
+25-Sep-26 16:59:21 - Modbus REST API - ERROR - 422 - 1790344761.994831 - 2026-09-25 16:59:21
+25-Sep-26 16:59:22 - Modbus REST API - INFO - 404 - 1790344762.6826196 - 2026-09-25 16:59:22
+25-Sep-26 16:59:22 - Modbus REST API - ERROR - 404 - 1790344762.6826196 - 2026-09-25 16:59:22
+25-Sep-26 16:59:30 - Modbus REST API - INFO - 200 - 1790344770.531201 - 2026-09-25 16:59:30
+25-Sep-26 16:59:30 - Modbus REST API - INFO - 200 - 1790344770.531201 - 2026-09-25 16:59:30
+25-Sep-26 16:59:31 - Modbus REST API - INFO - 404 - 1790344771.2085435 - 2026-09-25 16:59:31
+25-Sep-26 16:59:31 - Modbus REST API - ERROR - 404 - 1790344771.2085435 - 2026-09-25 16:59:31
+25-Sep-26 16:59:49 - Modbus REST API - INFO - 200 - 1790344789.5190299 - 2026-09-25 16:59:49
+25-Sep-26 16:59:49 - Modbus REST API - INFO - 200 - 1790344789.5190299 - 2026-09-25 16:59:49
+25-Sep-26 16:59:50 - Modbus REST API - INFO - 404 - 1790344790.1478791 - 2026-09-25 16:59:50
+25-Sep-26 16:59:50 - Modbus REST API - ERROR - 404 - 1790344790.1478791 - 2026-09-25 16:59:50
+25-Sep-26 17:00:23 - Modbus REST API - INFO - 200 - 1790344823.4809482 - 2026-09-25 17:00:23
+25-Sep-26 17:00:23 - Modbus REST API - INFO - 200 - 1790344823.4809482 - 2026-09-25 17:00:23
+25-Sep-26 17:00:32 - Modbus REST API - INFO - 200 - 1790344832.7895877 - 2026-09-25 17:00:32
+25-Sep-26 17:00:32 - Modbus REST API - INFO - 200 - 1790344832.7895877 - 2026-09-25 17:00:32
+25-Sep-26 17:00:35 - Modbus REST API - INFO - 200 - 1790344835.414507 - 2026-09-25 17:00:35
+25-Sep-26 17:00:35 - Modbus REST API - INFO - 200 - 1790344835.414507 - 2026-09-25 17:00:35
+25-Sep-26 17:00:45 - Modbus REST API - INFO - 200 - 1790344845.721328 - 2026-09-25 17:00:45
+25-Sep-26 17:00:45 - Modbus REST API - INFO - 200 - 1790344845.721328 - 2026-09-25 17:00:45
+25-Sep-26 17:05:14 - Modbus REST API - INFO - 200 - 54.72ms - 2026-09-25 17:05:14
+25-Sep-26 17:05:14 - Modbus REST API - INFO - 200 - 54.72ms - 2026-09-25 17:05:14
+25-Sep-26 17:05:49 - Modbus REST API - INFO - 200 - 0.40ms - 2026-09-25 17:05:49
+25-Sep-26 17:05:49 - Modbus REST API - INFO - 200 - 0.40ms - 2026-09-25 17:05:49
+25-Sep-26 17:05:50 - Modbus REST API - INFO - 200 - 29.29ms - 2026-09-25 17:05:50
+25-Sep-26 17:05:50 - Modbus REST API - INFO - 200 - 29.29ms - 2026-09-25 17:05:50
+25-Sep-26 17:08:40 - Modbus REST API - INFO - 200 - 67.96ms - 2026-09-25 17:08:40
+25-Sep-26 17:08:40 - Modbus REST API - INFO - 200 - 67.96ms - 2026-09-25 17:08:40
+25-Sep-26 17:09:35 - Modbus REST API - INFO - 422 - 8.52ms - 2026-09-25 17:09:35
+25-Sep-26 17:09:35 - Modbus REST API - ERROR - 422 - 8.52ms - 2026-09-25 17:09:35
+25-Sep-26 17:09:53 - Modbus REST API - INFO - 405 - 0.33ms - 2026-09-25 17:09:53
+25-Sep-26 17:09:53 - Modbus REST API - ERROR - 405 - 0.33ms - 2026-09-25 17:09:53
+25-Sep-26 17:10:14 - Modbus REST API - INFO - 200 - 193.34ms - 2026-09-25 17:10:14
+25-Sep-26 17:10:14 - Modbus REST API - INFO - 200 - 193.34ms - 2026-09-25 17:10:14
+25-Sep-26 17:10:23 - Modbus REST API - INFO - 200 - 47.14ms - 2026-09-25 17:10:23
+25-Sep-26 17:10:23 - Modbus REST API - INFO - 200 - 47.14ms - 2026-09-25 17:10:23
+25-Sep-26 17:10:33 - Modbus REST API - INFO - 200 - 42.96ms - 2026-09-25 17:10:33
+25-Sep-26 17:10:33 - Modbus REST API - INFO - 200 - 42.96ms - 2026-09-25 17:10:33
+25-Sep-26 17:11:11 - Modbus REST API - INFO - 200 - 44.51ms - 2026-09-25 17:11:11
+25-Sep-26 17:11:11 - Modbus REST API - INFO - 200 - 44.51ms - 2026-09-25 17:11:11
+25-Sep-26 17:11:30 - Modbus REST API - INFO - 200 - 46.21ms - 2026-09-25 17:11:30
+25-Sep-26 17:11:30 - Modbus REST API - INFO - 200 - 46.21ms - 2026-09-25 17:11:30
+25-Sep-26 17:13:40 - Modbus REST API - INFO - 200 - 121.06ms - 2026-09-25 17:13:40
+25-Sep-26 17:13:40 - Modbus REST API - INFO - 200 - 121.06ms - 2026-09-25 17:13:40
+25-Sep-26 17:14:01 - Modbus REST API - INFO - 200 - 78.69ms - 2026-09-25 17:14:01
+25-Sep-26 17:14:01 - Modbus REST API - INFO - 200 - 78.69ms - 2026-09-25 17:14:01
+25-Sep-26 17:14:19 - Modbus REST API - INFO - 200 - 68.99ms - 2026-09-25 17:14:19
+25-Sep-26 17:14:19 - Modbus REST API - INFO - 200 - 68.99ms - 2026-09-25 17:14:19
+25-Sep-26 17:14:37 - Modbus REST API - INFO - 200 - 47.49ms - 2026-09-25 17:14:37
+25-Sep-26 17:14:37 - Modbus REST API - INFO - 200 - 47.49ms - 2026-09-25 17:14:37
+25-Sep-26 17:14:46 - Modbus REST API - INFO - 200 - 147.26ms - 2026-09-25 17:14:45
+25-Sep-26 17:14:46 - Modbus REST API - INFO - 200 - 147.26ms - 2026-09-25 17:14:45
+25-Sep-26 17:14:55 - Modbus REST API - INFO - 200 - 51.80ms - 2026-09-25 17:14:55
+25-Sep-26 17:14:55 - Modbus REST API - INFO - 200 - 51.80ms - 2026-09-25 17:14:55
+25-Sep-26 17:15:18 - Modbus REST API - INFO - 200 - 79.47ms - 2026-09-25 17:15:18
+25-Sep-26 17:15:18 - Modbus REST API - INFO - 200 - 79.47ms - 2026-09-25 17:15:18
+25-Sep-26 17:15:26 - Modbus REST API - INFO - 200 - 40.57ms - 2026-09-25 17:15:26
+25-Sep-26 17:15:26 - Modbus REST API - INFO - 200 - 40.57ms - 2026-09-25 17:15:26
+25-Sep-26 17:20:44 - Modbus REST API - INFO - 200 - 50.29ms - 2026-09-25 17:20:44
+25-Sep-26 17:20:44 - Modbus REST API - INFO - 200 - 50.29ms - 2026-09-25 17:20:44
+25-Sep-26 17:21:03 - Modbus REST API - INFO - 200 - 43.31ms - 2026-09-25 17:21:03
+25-Sep-26 17:21:03 - Modbus REST API - INFO - 200 - 43.31ms - 2026-09-25 17:21:03
+25-Sep-26 17:21:30 - Modbus REST API - INFO - 422 - 3.30ms - 2026-09-25 17:21:30
+25-Sep-26 17:21:30 - Modbus REST API - ERROR - 422 - 3.30ms - 2026-09-25 17:21:30
